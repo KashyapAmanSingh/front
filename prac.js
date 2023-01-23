@@ -166,14 +166,14 @@ var t = new Date();
 
 
 
-	// // Initialization
-	// let date = new Date();
+	// Initialization
+	let date = new Date();
 	
-	// // Execution
-	// let output = date.setTime(-300000000000);
+	// Execution
+	let output = date.setTime(-300000000000);
 	
-	// // Display Output
-	// console.log(`setTime() Output:`, output, date);
+	// Display Output
+	console.log(`setTime() Output:`, output, date);
 
 
 
