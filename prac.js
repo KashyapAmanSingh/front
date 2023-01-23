@@ -79,6 +79,111 @@ var sstr = "kashyap aman singh whats going";
 // valueOf();       defsalut
 
 
+// _______________________________________________________________________________________________________________________________________________________________________________
+// _________________________MATH METHOD______________________________________________________________________________________________________________________________________________________
+
+
+// var a = Math.ceil(2.44);
+// var a = Math.ceil(-2.44);
+
+// var a = Math.floor(2.44);
+
+// var a = Math.round(2.44);
+// var a = Math.round(7.54);
+
+// var a = Math.trunc(3.98 );           // return only integer
+
+// var a = Math.max(2.44,33,43,544,999,999.99);          similarly min work for return minium of list
+
+// var a = Math.sqrt(4);
+// var b= Math.cbrt(27);
+
+// var a = Math.random();
+// var a = Math.floor(Math.random()*1000 +1);  between 1 and 1000 
+
+// var a = Math.abs(-66.8767);          return only absolute value because -ve also as absolute  
+
+
+// var a = Math.PI;         // pi is not an function so only PI
+
+// console.log(a);
+
+
+
+// _______________________________________________________________________________________________________________________________________________________________________________
+// _____________________________________ DaTe Method______________________________________________________________________________________________________________________________________________________
+
+
+                // for using objecct of DaTE MAKE A    new varialbe as vae d = new Date
+
+//  var t = new Date();
+// //  console.log(t);
+
+// // console.log(t.getDate());
+// // console.log(t.getMonth());
+// // console.log(t.getDay());
+// // console.log(t.getTime());
+// // console.log(t.getMilliseconds());
+// // console.log(t.getMinutes());
+// console.log(t.getSeconds());
+// console.log(t.getMilliseconds());
+// console.log(t.getUTCSeconds());
+
+
+// var t = new Date('january 5 2010');                // with parameter 
+
+// console.log(t.getDate());
+// console.log(t.getMonth());
+// console.log(t.getDay());
+// console.log(t.getTime());
+// console.log(t.getMilliseconds());
+// console.log(t.getMinutes());
+// console.log(t.getMilliseconds());
+// console.log(t.getSeconds());
+// console.log(t.getMilliseconds());
+// console.log(t.getUTCSeconds());
+
+// _________________________________________________SET DATE METHOD________________________________________________________________________________________________-
+
+var t = new Date();
+//  t.setDate(20);                PRINT THIS MONTHS DATE AND DAY
+// t.setFullYear(2029);              2029 KO DEVICE KAY DATE ANUSAR KON SA DATE HOGA
+
+// t.setDate(20)
+// t.setTime(9)
+
+
+// console.log( t);
+           
+	// // Initialization
+	// let date = new Date();
+	
+	// // Execution
+	// let output = date.setTime(400);
+	
+	// // Display Output
+	// console.log(`setTime() Output:`, output, date);
+
+
+
+	// // Initialization
+	// let date = new Date();
+	
+	// // Execution
+	// let output = date.setTime(-300000000000);
+	
+	// // Display Output
+	// console.log(`setTime() Output:`, output, date);
+
+
+
+
+// _______________________________________________________________________________________________________________________________________________________________________________
+// _____________________________________ D.O.M ( DOcument Object Method)______________________________________________________________________________________________________________________________________________________
+
+
+
+
 
 
 
