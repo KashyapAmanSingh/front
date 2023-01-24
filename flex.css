@@ -1,2 +1,14 @@
 .container{   
               display: flex;
+
+
+}
+
+
+.box{background-color: aqua;   
+        width: 150px;
+height: 150px;
+margin: 20px;
+
+flex-shrink: ;
+}
