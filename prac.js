@@ -194,8 +194,11 @@ var t = new Date();
 // var element = document.getElementsByClassName("container")[0];
 // var element = document.getElementsByTagName("div")[1];
 
-var element = document.getElementById("header").innertext;
+// var element = document.getElementById("header").getAttribute("id");
+var element = document.getElementById("header").getAttribute("class");
 console.log(element);
+
+
 
 
 
