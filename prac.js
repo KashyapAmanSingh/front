@@ -183,6 +183,34 @@ var t = new Date();
 
 
 
+// var element = document.all[];
+// var element= document.links[0];     // return total anchor tag with index number 
+// var element = document.images;              
+// var element = document.doctype;
+// var element = document.URL;
+// var element = document.domain;
+// var element = document.baseURI;    //  retun full url
+
+// var element = document.getElementsByClassName("container")[0];
+var element = document.getElementsbyid("box");
+
+
+
+console.log(element);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
