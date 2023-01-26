@@ -192,10 +192,9 @@ var t = new Date();
 // var element = document.baseURI;    //  retun full url
 
 // var element = document.getElementsByClassName("container")[0];
-var element = document.getElementsByTagName("div")[1];
+// var element = document.getElementsByTagName("div")[1];
 
-
-
+var element = document.getElementById("header").innertext;
 console.log(element);
 
 
