@@ -195,7 +195,33 @@ var t = new Date();
 // var element = document.getElementsByTagName("div")[1];
 
 // var element = document.getElementById("header").getAttribute("id");
-var element = document.getElementById("header").getAttribute("class");
+// var element = document.getElementById("header").getAttribute("class");      target kay under ka Attribute ke value return karta hai
+// var element = document.getElementById("header").getAttribute("class");    
+// var element = document.getElementById("header").getAttributeNode("class");        Attribute node print every thing like propertyname ; attribute name etc    
+// var element = document.getElementById("header").getAttributeNode("class").value;      return value of target ,;; but not prescribed to do this 
+// var element = document.getElementById("header").innerHTML;    
+// var element = document.getElementById("header").innerText; 
+// var element = document.getElementById("header").attributes;                    REturn in array  of collection of array
+// OR
+// var element = document.getElementById("header").attributes[0]; 
+// var element = document.getElementById("header").attributes[0].value;     value of attibute that is on index number 0 
+// var element = document.getElementById("header").removeAttributes[0]; 
+
+//SETTING VALUE
+// var element = document.getElementsByClassName("HEADER2").innerHTml= "<h1>SETTING ARRTIBUTE</h1>"     // THIS WILL PRINT DIRECTLY WITH H TAG TO AVOID THIS USE .InnerHTML INstead of InnerText
+
+// var element = document.getElementById("header").innerHTML = "<h1>SETTING ARRTIBUTE</h1>"  
+
+
+
+
+
+
+
+
+
+
+
 console.log(element);
 
 
