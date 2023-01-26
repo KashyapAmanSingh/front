@@ -192,7 +192,7 @@ var t = new Date();
 // var element = document.baseURI;    //  retun full url
 
 // var element = document.getElementsByClassName("container")[0];
-var element = document.getElementsbyid("box");
+var element = document.getElementsByTagName("div")[1];
 
 
 
