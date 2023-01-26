@@ -207,18 +207,25 @@ var t = new Date();
 // var element = document.getElementById("header").attributes[0].value;     value of attibute that is on index number 0 
 // var element = document.getElementById("header").removeAttributes[0]; 
 
-//SETTING VALUE
-// var element = document.getElementsByClassName("HEADER2").innerHTml= "<h1>SETTING ARRTIBUTE</h1>"     // THIS WILL PRINT DIRECTLY WITH H TAG TO AVOID THIS USE .InnerHTML INstead of InnerText
+//SET VALUE
+// var element = document.getElementsByClassName("HEADER2").innerTEXT= "<h1>SETTING ARRTIBUTE</h1>"     // THIS WILL PRINT DIRECTLY WITH H TAG TO AVOID THIS USE .InnerHTML INstead of InnerText
 
+// var element = document.getElementById("header").innerHTML = "<h1>SETTING ARRTIBUTE</h1>"  
+// SAME
+
+// var element = document.getElementById("header").innerText = "<h1>SETTING ARRTIBUTE</h1>"  
 // var element = document.getElementById("header").innerHTML = "<h1>SETTING ARRTIBUTE</h1>"  
 
 
+// var element = document.getElementById("header").setAttribute("class","sss") ;    this will set any attibute directly form JS file with setAttribute("what to set ", "what value to set like for style we set here 2px solid red")
+//  var element = document.getElementById("header").getAttribute("class");  
+// OR SET ATTRIBTE BY attribute index.value
 
+// var element = document.getElementById("header").attributes[1].value=  "SSS";
+// var element = document.getElementById("header").getAttribute("class");
+// but later arrtibte is easy to set
 
-
-
-
-
+// var element = document.getElementById("header").removeAttribute("style");                   by this method we delete all attribute that we want to delete by simply targer.removeAttribute(""name of attri that we want to remove")
 
 
 
