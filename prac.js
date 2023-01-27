@@ -227,20 +227,17 @@ var t = new Date();
 
 // var element = document.getElementById("header").removeAttribute("style");                   by this method we delete all attribute that we want to delete by simply targer.removeAttribute(""name of attri that we want to remove")
 
+// console.log(element);
 
-
-console.log(element);
-
-
-
-
-
+// _____________________________________________________________________________________________________________________________________________________
+// _________________________________________DOM QUERY SELECTOR ______________________________________________________________________________--?
+// __________________________________________________________________________________________________________________________________________________________________?
 
 
 
 
-
-
+// var element = document.querySelector("header").attributes
+// console.log(element);
 
 
 
@@ -249,12 +246,33 @@ console.log(element);
 
 
 
+// ___________________________________________________________________________________________________________________________________________________________________________________________
+
+// __________________________________________________________________________________________________________________________________________________________________________________________
 
 
 
+// const team = [
+//         { name:"kashyap" , role:"frontend developer" , skill: "mern" , rank :3      },
+// 				  { name:"AMAN kashyap" , role:"BACKEND developer" , skill: "mern" , rank :3      },
+// 				  { name:"AYUSH kashyap" , role:"FULL developer" , skill: "mern" , rank :3      },
+// 				  { name:"UTKARSH kashyap" , role:"frontend developer" , skill: "mern" , rank :3      },
+// 				  { name:"AARAV kashyap" , role:"MERN developer" , skill: "mern" , rank :3      },
+// 				  { name:"ABHISHEK kashyap" , role:"MEAN developer" , skill: "mern" , rank :3      }
+
+// ]
+
+//                   team.forEach((team,index, arr)   =>{ console.log(  index + "  " + team.role + " " + team.rank   + "  "  + team.skill   + "  " + arr) })             
+				// value at 1st parameter 
+				// index at second
+				  //   arr  IS ARRAY OBJECT BELONG TO CURRENT ARRAY which array
+				     
 
 
+  ///  const age =[ 33,44,56,76,12,65,09,65];
 
+// age.forEach(( age,index)=>  console.log(  typeof( index + "  " + age)))              this will return string if only console.log(age)  , this will return data in form of ARRAY
+      //age.forEach(function(value,index,arr) {console.log(value , arr[3])} );
 
 
 
