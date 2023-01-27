@@ -299,6 +299,13 @@ var t = new Date();
 
 
 
+
+
+
+
+
+
+
 // ______________________________________________________________________FOR IN LOOP________________________________________________________________________________________________________________________________________________
 //  for(var x in arrayname)
 
@@ -319,8 +326,8 @@ var t = new Date();
 
 // for(var value of array){    statement      }
   var a = ["aman", "kashyap", "akash" ,56,76,88,90,34]
-// for(var value of  a  ) {console.log(value)}
-
+for(var value in  a  ) {console.log(value + "  "  + a)}
+ 
 
 // for(var value of  a  ) {console.log(value[0])}    Allow to access the values DIRECTLY of the object directly,without having to use an index       ,, yeh srting kee har ek single object ko print kar deta hai 
 
@@ -328,11 +335,13 @@ var t = new Date();
                                             // Vs.
 
 // for(var i in a){console.log(a[0])}                   for in only ALLOW  TO access srting not every single element of string
-                                                    //  SIMPLY, FOR IN LOOP ALLOW TO ACCESS KEY{PROPerty} OF OBJECT RATHER THAN VALUE ,,... FOR ARRAY ITS INDEX NUMBER
+                                                    //  SIMPLY, FOR IN LOOP ALLOW TO ACCESS KEY{PROPerty} OF OBJECT RATHER THAN VALUE ,,... FOR ARRAY ITS INDEX NUMBER                     // gives index number
 
 
 
-
+// VVi
+// value show kar ha toh ----- for of loop
+//  agar object kay key aur array kay index Number deekhnay ha toh ---    for in loop
 
 
 
