@@ -396,6 +396,33 @@ var t = new Date();
 
 
 
-var ele = document.querySelector(".vac").attribute.style.color[1]
+// var ele = document.querySelector(".vac").style.color= "red"
 
+// var ele = document.querySelector(".vac").style.background= "red"
+// var ele = document.querySelector(".vac").style.width="30px"
+
+// ___________________________________________________________________________________________________________________________________________________________________________________________
+
+//  agar className use kaarna hoo toh ; first assign class name like this  
+// var ele = document.querySelector("body").className = "abc";   ,, THEN AFTER THAT MAKE .CLASS{   STATEMENT }   IN css  FILE 
+// ___________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+var ele = document.querySelector("body").className = "abc";
+// var v  =  document.querySelector(".vac").attributes
+// console.log(v);
 console.log(ele);
+
+
+
+
+
+
+
+
+
+
+
+
+
