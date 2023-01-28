@@ -325,8 +325,11 @@ var t = new Date();
 // SYNtax-
 
 // for(var value of array){    statement      }
-  var a = ["aman", "kashyap", "akash" ,56,76,88,90,34]
-for(var value in  a  ) {console.log(value + "  "  + a)}
+//   var a = [56,76,88,90,34]
+var a = ["aman", "kashyap", "akash" ,56,76,40,88,90,34]
+
+  
+// for(var value of  a  ) {console.log(value[2] )}
  
 
 // for(var value of  a  ) {console.log(value[0])}    Allow to access the values DIRECTLY of the object directly,without having to use an index       ,, yeh srting kee har ek single object ko print kar deta hai 
@@ -344,8 +347,8 @@ for(var value in  a  ) {console.log(value + "  "  + a)}
 //  agar object kay key aur array kay index Number deekhnay ha toh ---    for in loop
 
 
-
-
+        // a.find((datafroma)    =>   {if(datafroma >=40){console.log("print all is well"+ "  " + a )}else{console.log("inter valid")}})
+		// a.findIndex((datafroma)    =>   {if(datafroma > 40){console.log("print all is well"+ "  " + datafroma )}else{console.log("inter valid")}})
 
 
 
