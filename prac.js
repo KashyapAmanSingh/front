@@ -326,7 +326,7 @@ var t = new Date();
 
 // for(var value of array){    statement      }
 //   var a = [56,76,88,90,34]
-var a = ["aman", "kashyap", "akash" ,56,76,40,88,90,34]
+// var a = ["aman", "kashyap", "akash" ,56,76,40,88,90,34]
 
   
 // for(var value of  a  ) {console.log(value[2] )}
@@ -356,14 +356,27 @@ var a = ["aman", "kashyap", "akash" ,56,76,40,88,90,34]
 
 
 
+// ___________________________________________________________________________________________________________________________________________________________________________________________
+
+// _________________________________________DOM QUERY SELECTOR_________________________________________________________________________________________________________________________________________________
 
 
 
 
 
+    //   var ele = document.querySelectorAll(".hed2").innertext = "  <h1> this is only for check </h1>";
+	// var ele = document.querySelectorAll(".hed2")           sara hed2 classs ka document return karr diya gya 
+
+	// var ele = document.querySelectorAll(".hed2").innerText
+    //           console.log(ele);
+
+//   var ele = document.getElementsByClassName(".hed2").innerText
+			//   var ele = document.querySelector(".vac").innertext;
 
 
+			var ele = document.querySelector(".vac").innertext;
 
+              console.log(ele);
 
 
 
