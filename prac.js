@@ -394,6 +394,17 @@ var t = new Date();
 // 2 - className
 // 3 - classList
 
+// classList - THIS RETURNS ARRAY.it has two method add & remove
+// className - this retun a srting 
+
+
+
+
+
+
+
+
+
 
 
 // var ele = document.querySelector(".vac").style.color= "red"
@@ -409,10 +420,20 @@ var t = new Date();
 
 
 
-var ele = document.querySelector("body").className = "abc";
+// var ele = document.querySelector("body").className = "abc  xyz";   
+//   yahan xyz aue abc do class hai but last wale class  kee priority jyada hogi
+
+
 // var v  =  document.querySelector(".vac").attributes
 // console.log(v);
-console.log(ele);
+// var lis = document.querySelector("body").classList = "abc  xyz"; 
+// ----------------------------------------classList has 2 method add & remove 
+// var lis = document.querySelector("body").classList.add("abc" , "gfg"); 
+// var lis = document.querySelector("body").classList.remove("abc  xyz "); 
+// var lis = document.querySelector("body").classList.toggle("abc"); 
+
+// console.log(ele);
+// console.log(lis);
 
 
 
