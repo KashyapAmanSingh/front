@@ -374,18 +374,28 @@ var t = new Date();
 			//   var ele = document.querySelector(".vac").innertext;
 
 
-			var ele = document.querySelector(".vac").innertext;
-
-              console.log(ele);
+			// var ele = document.querySelectorAll(".hed2")[1].innerText;
 
 
 
 
+			// var ele = document.querySelector(".vac h3").inner
+            //   console.log(ele);
 
 
 
 
+			// ___________________________________________________________________________________________________________________________________________________________________________________________
+
+			// _________________________________________DOM CSS STYLing_________________________________________________________________________________________________________________________________________________
+			
+// 3 method to set and get css value 
+// 1- Style
+// 2 - className
+// 3 - classList
 
 
 
+var ele = document.querySelector(".vac").attribute.style.color[1]
 
+console.log(ele);
