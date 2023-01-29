@@ -1,4 +1,4 @@
-.container{   
+/* .container{   
               display: flex;
 
 
@@ -15,6 +15,26 @@ margin: 20px;
 
 
 .abc {  background-color: brown;    }
+.mvi {
+        width: 100%;
+        padding: 25px;
+        background-color: coral;
+        color: white;
+        font-size: 25px;
+      }       
+
+.xyz{     background-color: rgb(242, 255, 0);                     } */
 
 
-.xyz{     background-color: rgb(242, 255, 0);                     }
+
+
+
+
+
+.mystyle {
+        width: 100%;
+        padding: 25px;
+        background-color: coral;
+        color: white;
+        font-size: 25px;
+      }

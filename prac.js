@@ -392,7 +392,7 @@ var t = new Date();
 // 3 method to set and get css value 
 // 1- Style
 // 2 - className
-// 3 - classList
+// 3 - classList   -------- prior it has four methods , toggle,length, contains
 
 // classList - THIS RETURNS ARRAY.it has two method add & remove
 // className - this retun a srting 
@@ -414,22 +414,51 @@ var t = new Date();
 
 
 // var ele = document.querySelector("body").className = "abc  xyz";   
-//   yahan xyz aue abc do class hai but last wale class  kee priority jyada hogi
+// //   yahan xyz aue abc do class hai but last wale class  kee priority jyada hogi
 
 
 // var v  =  document.querySelector(".vac").attributes
 // console.log(v);
 // var lis = document.querySelector("body").classList = "abc  xyz"; 
-// ----------------------------------------classList has 2 method add & remove 
+// // ----------------------------------------classList has 2 method add & remove 
 // var lis = document.querySelector("body").classList.add("abc" , "gfg"); 
 // var lis = document.querySelector("body").classList.remove("abc  xyz "); 
-// var lis = document.querySelector("body").classList.toggle("abc"); 
+// var lis = document.querySelector(".outer").classList.length;     how many class used here 
 
-// console.log(ele);
+var ele;
+document.querySelector(".header").addEventListener( "click", bac() );
+
+function bac()  {   
+ document.querySelector(".header").classList.toggle("mystyle"); 
+
+// document.querySelector("outer").classList.add( "gfg");\\\
+
+
+}
+
 // console.log(lis);
+// console.log(ele);
 
 
 
+
+// }
+
+//  <body>
+
+//  <button onclick="myFunction()">Try it</button>
+ 
+//  <div id="myDIV">
+//  This is a DIV element.
+//  </div>
+ 
+//  <script>
+//  function myFunction() {
+// 	var element = document.getElementById("myDIV");
+// 	element.classList.toggle("mystyle");
+//  }
+//  </script>
+ 
 
 
 // ___________________________________________________________________________________________________________________________________________________________________________________________
@@ -467,29 +496,44 @@ var t = new Date();
 					   
 				// 	   }
 			   
+
+
 // BY USING ARROW FUNCTION  
-				document.querySelector(".vac").addEventListener( "mouseenter", function(){  this.style.background = "tan"   
-				this.style.color = "black"   });
+
+// 				document.querySelector(".vac").addEventListener( "mouseenter", function(){  this.style.background = "tan"   
+// 				this.style.color = "black"   });
 			
 
+// // 3RD PARAMETER OF addEventListener UseCapture , return true or false 
+
+
+
+// // document.querySelector(".outer").addEventListener( "click", function(){ alert("oUUUter div ")   });
+
+// // document.querySelector(".inner").addEventListener( "click", function(){ alert(" INNER dDiv ")   });
 
 
 
 
+// document.querySelector(".outer").addEventListener( "click", function  bbb(){ confirm("outer div ")}, false    );
+
+// document.querySelector(".inner").addEventListener( "click", function(){ confirm(" INNER div ")} , false );
+
+
+// jo UseCapture true hoga woh pehle call hoga 
+// jo use capture false hoga woh baad mai call hoga kahin payyy bhee click karo aap
+
+
+z
+_____________________________//  removeEventListener("onclick",  fn_name);____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
 
 
+// document.querySelector(".inner").removeEventListener( "onmouseenter", bbb );
 
 
 
 
-
-
-
-
-
-
-
-
-				
