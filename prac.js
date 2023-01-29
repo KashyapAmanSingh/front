@@ -425,11 +425,22 @@ var t = new Date();
 // var lis = document.querySelector("body").classList.remove("abc  xyz "); 
 // var lis = document.querySelector(".outer").classList.length;     how many class used here 
 
+
+
+
+
+// -**********************************--------------MOST IMPORTANT TOGGLE FUNCTION-----------*************************************************************--------------------------------------------------------------------------------------------------------------------------------------------------------
+// step - 1 --- firstly target and addEventListener("eventname like click not onclick", fn_name that you have to play onclick etc )
+// step- 2 --- second  target then make fn that you have  assign in addEventListener parameter 
+// step - 3 --- in function target.classList.toggle("that you want to toggle may be class , id or etc ");
+//   step ----4 -- make a css or somthing other that u want to toggle for css add in csss file to property according to your want 
+
+
 var ele;
-document.querySelector(".header").addEventListener( "click", bac() );
+document.querySelector(".HEADER2").addEventListener( "click", bac );
 
 function bac()  {   
- document.querySelector(".header").classList.toggle("mystyle"); 
+ document.querySelector(".HEADER2").classList.toggle("mystyle"); 
 
 // document.querySelector("outer").classList.add( "gfg");\\\
 
