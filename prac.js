@@ -400,13 +400,6 @@ var t = new Date();
 
 
 
-
-
-
-
-
-
-
 // var ele = document.querySelector(".vac").style.color= "red"
 
 // var ele = document.querySelector(".vac").style.background= "red"
@@ -439,6 +432,45 @@ var t = new Date();
 
 
 
+// ___________________________________________________________________________________________________________________________________________________________________________________________
+
+// _________________________________________Addeventlistner(event, fn_name, usecapture)________________________________________________________________________________________________________________________________________________
+			
+
+					 
+// syntax  ----
+
+// target.addEventListener("eventname like click/mouseenter etc",   fn name without () )
+
+
+
+
+// var lis = document.querySelector(".HEADER2").oncontextmenu = eee;
+
+// function eee(){  document.querySelector(".HEADER2").style.background = "red"                   }
+
+
+                                    // 2ND METHOd for addEventListener
+
+				// 		 document.querySelector(".vac").addEventListener( "mouseenter",  abc);
+				// 		 function abc(){  document.querySelector(".HEADER2").style.background = "red"   
+						
+				// 		 document.querySelector(".HEADER2").style.color = "tan"   
+						
+				// 		}
+                
+	
+				// 		document.querySelector(".vac").addEventListener( "mouseenter",  abc);
+				// 		function abc(){  this.style.background = "tan"   
+				//    this.style.color = "black"   
+
+					   
+				// 	   }
+			   
+// BY USING ARROW FUNCTION  
+				document.querySelector(".vac").addEventListener( "mouseenter", function(){  this.style.background = "tan"   
+				this.style.color = "black"   });
+			
 
 
 
@@ -447,3 +479,17 @@ var t = new Date();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
