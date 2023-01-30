@@ -436,21 +436,46 @@ var t = new Date();
 //   step ----4 -- make a css or somthing other that u want to toggle for css add in csss file to property according to your want 
 
 
-var ele;
-document.querySelector(".HEADER2").addEventListener( "click", bac );
+// var ele;
+// document.querySelector(".HEADER2").addEventListener( "click", bac );
 
-function bac()  {   
- document.querySelector(".HEADER2").classList.toggle("mystyle"); 
+// function bac()  {   
+//  document.querySelector(".HEADER2").classList.toggle("mystyle"); 
 
-// document.querySelector("outer").classList.add( "gfg");\\\
+// // document.querySelector("outer").classList.add( "gfg");\\\
 
 
-}
+// }
 
 // console.log(lis);
 // console.log(ele);
 
 
+                                        // length method of classList  - it basically use with . item(0,1,2--)  . retun item assign on particular index 
+
+
+
+// var ele;
+// document.querySelector(".HEADER2").addEventListener( "click", bac );
+
+// function bac()  {   
+//   var l = document.querySelector(".HEADER2").classList.item(0); 
+
+// console.log(l);
+// }
+
+                                          // contains method of classList it return true if that element exist ,, return false if not exist
+
+            
+
+// var ele;
+// document.querySelector(".HEADER2").addEventListener( "click", bac );
+// var  e =0;
+// function bac()  {   
+//   var l = document.querySelector(".HEADER2").classList.contains("HEADER2 "); console.log(l); 
+
+//   e++ ;  console.log(e); 
+// }
 
 
 // }
@@ -535,15 +560,72 @@ function bac()  {
 // jo use capture false hoga woh baad mai call hoga kahin payyy bhee click karo aap
 
 
-z
-_____________________________//  removeEventListener("onclick",  fn_name);____________________________________________________________________________________________________________________________________________________________________________________________________________
 
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________//  removeEventListener("onclick",  fn_name);____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
 
 
 // document.querySelector(".inner").removeEventListener( "onmouseenter", bbb );
+
+
+
+
+
+
+// _____________________________// DOM traveresal Method;____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+// 1 - parentNode 
+// 2 - ParentElement
+// 3 - children 
+// 4 - childNodes
+// 5 - firstChild 
+// 6 - firstElementChild
+// 7 - lastChild 
+// 8 - lastElementChild 
+// 9 - nextElementChild
+// 10 - nextSibling
+//  11 - previousElementSibling
+//  12 - previousSibling 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
