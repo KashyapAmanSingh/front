@@ -592,10 +592,34 @@ var t = new Date();
 // 10 - nextSibling
 //  11 - previousElementSibling
 //  12 - previousSibling 
+// 
+
+
+// var e=   document.getElementById("in").firstElementChild.style.background= "tan";;
+// var e=   document.getElementById("in").parentNode.style.background= "red";
+// var e=   document.getElementById("in").lastElementChild.style.background= "tan";;
+// var e=   document.getElementById("chd-c").previousElementSibling.style.background= "tan";;
+// var e=   document.getElementById("chd-c").nextElementSibling.style.background= "tan";;
+
+// var e=   document.getElementById("chd-c").parentElement.style.background= "tan";;
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------WE PLAY WITH TOGGLE FUNCTIONOVER HERE  
+
+var e=   document.getElementById("chd-c").parentElement.addEventListener( "click", vcv );
+
+function  vcv(){
+               document.getElementById("ou").classList.toggle("mystyle")
 
 
 
+}
 
+
+    // var e=   document.getElementById("chd-c").parentElement.style.background= "blue";;
+
+
+console.log(e);
 
 
 
