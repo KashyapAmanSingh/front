@@ -18,7 +18,7 @@
 
 
 var sstr = "kashyap aman singh whats going";
-    // var p  = ;
+// var p  = ;
 //   console.log(sstr.length);
 // console.log(sstr.toLowerCase());
 // console.log(sstr.toUpperCase());
@@ -41,9 +41,9 @@ var sstr = "kashyap aman singh whats going";
 // console.log(sstr.replace( "/a/g", "X"));
 // console.log(sstr.replace( /a/g, "m"));            for replace globally
 
-    //    console.log(sstr.trim());
+//    console.log(sstr.trim());
 
-  //  console.log(sstr.charAt(10))     ;    //   the parameter that index you give this print like here at index 0 k         
+//  console.log(sstr.charAt(10))     ;    //   the parameter that index you give this print like here at index 0 k         
 //   console.log(sstr.charCodeAt(0))                     Asky table   at index 0 k has 107 number in askyy
 // console.log(sstr.fromCharCode( 107 ));    
 
@@ -62,10 +62,10 @@ var sstr = "kashyap aman singh whats going";
 
 
 // The index to the end of the specified portion of stringObj.The substring includes the characters up to, but not including, the character indicated by end.If this value is not specified, the substring continues to the end of stringObj.
-  
+
 // console.log(sstr.slice(3));                  char kay bad saab rerurn karr diya 
 //    console.log(sstr.slice(0));                     for 0 it will return all
-    // console.log(sstr.slice(-7));         from last 7 char
+// console.log(sstr.slice(-7));         from last 7 char
 //    string.slice(start?: number | undefined, end?: number | undefined): string
 
 
@@ -114,7 +114,7 @@ var sstr = "kashyap aman singh whats going";
 // _____________________________________ DaTe Method______________________________________________________________________________________________________________________________________________________
 
 
-                // for using objecct of DaTE MAKE A    new varialbe as vae d = new Date
+// for using objecct of DaTE MAKE A    new varialbe as vae d = new Date
 
 //  var t = new Date();
 // //  console.log(t);
@@ -154,26 +154,26 @@ var t = new Date();
 
 
 // console.log( t);
-           
-	// // Initialization
-	// let date = new Date();
-	
-	// // Execution
-	// let output = date.setTime(400);
-	
-	// // Display Output
-	// console.log(`setTime() Output:`, output, date);
+
+// // Initialization
+// let date = new Date();
+
+// // Execution
+// let output = date.setTime(400);
+
+// // Display Output
+// console.log(`setTime() Output:`, output, date);
 
 
 
-	// // Initialization
-	// let date = new Date();
-	
-	// // Execution
-	// let output = date.setTime(-300000000000);
-	
-	// // Display Output
-	// console.log(`setTime() Output:`, output, date);
+// // Initialization
+// let date = new Date();
+
+// // Execution
+// let output = date.setTime(-300000000000);
+
+// // Display Output
+// console.log(`setTime() Output:`, output, date);
 
 
 
@@ -263,16 +263,16 @@ var t = new Date();
 // ]
 
 //                   team.forEach((team,index, arr)   =>{ console.log(  index + "  " + team.role + " " + team.rank   + "  "  + team.skill   + "  " + arr) })             
-				// value at 1st parameter 
-				// index at second
-				  //   arr  IS ARRAY OBJECT BELONG TO CURRENT ARRAY which array
-				     
+// value at 1st parameter 
+// index at second
+//   arr  IS ARRAY OBJECT BELONG TO CURRENT ARRAY which array
 
 
-  ///  const age =[ 33,44,56,76,12,65,09,65];
+
+///  const age =[ 33,44,56,76,12,65,09,65];
 
 // age.forEach(( age,index)=>  console.log(  typeof( index + "  " + age)))              this will return string if only console.log(age)  , this will return data in form of ARRAY
-      //age.forEach(function(value,index,arr) {console.log(value , arr[3])} );
+//age.forEach(function(value,index,arr) {console.log(value , arr[3])} );
 
 
 
@@ -309,14 +309,14 @@ var t = new Date();
 // ______________________________________________________________________FOR IN LOOP________________________________________________________________________________________________________________________________________________
 //  for(var x in arrayname)
 
-            //  var a = {  fname:"aman",
-            // lname:"kashyap",
-			// age:18,
-			// country:"india"
-            //         };
+//  var a = {  fname:"aman",
+// lname:"kashyap",
+// age:18,
+// country:"india"
+//         };
 
-    
-			//  for(var i in a){console.log(a.age + "  " + a.fname  + "  " + a.lname     )}
+
+//  for(var i in a){console.log(a.age + "  " + a.fname  + "  " + a.lname     )}
 // taKE A VARIAble like this (var key in a )  matlab A ka sara value x mai cahala jayegaa    for printing console.log(a[x])
 
 
@@ -328,17 +328,17 @@ var t = new Date();
 //   var a = [56,76,88,90,34]
 // var a = ["aman", "kashyap", "akash" ,56,76,40,88,90,34]
 
-  
+
 // for(var value of  a  ) {console.log(value[2] )}
- 
+
 
 // for(var value of  a  ) {console.log(value[0])}    Allow to access the values DIRECTLY of the object directly,without having to use an index       ,, yeh srting kee har ek single object ko print kar deta hai 
 
 
-                                            // Vs.
+// Vs.
 
 // for(var i in a){console.log(a[0])}                   for in only ALLOW  TO access srting not every single element of string
-                                                    //  SIMPLY, FOR IN LOOP ALLOW TO ACCESS KEY{PROPerty} OF OBJECT RATHER THAN VALUE ,,... FOR ARRAY ITS INDEX NUMBER                     // gives index number
+//  SIMPLY, FOR IN LOOP ALLOW TO ACCESS KEY{PROPerty} OF OBJECT RATHER THAN VALUE ,,... FOR ARRAY ITS INDEX NUMBER                     // gives index number
 
 
 
@@ -347,8 +347,8 @@ var t = new Date();
 //  agar object kay key aur array kay index Number deekhnay ha toh ---    for in loop
 
 
-        // a.find((datafroma)    =>   {if(datafroma >=40){console.log("print all is well"+ "  " + a )}else{console.log("inter valid")}})
-		// a.findIndex((datafroma)    =>   {if(datafroma > 40){console.log("print all is well"+ "  " + datafroma )}else{console.log("inter valid")}})
+// a.find((datafroma)    =>   {if(datafroma >=40){console.log("print all is well"+ "  " + a )}else{console.log("inter valid")}})
+// a.findIndex((datafroma)    =>   {if(datafroma > 40){console.log("print all is well"+ "  " + datafroma )}else{console.log("inter valid")}})
 
 
 
@@ -364,31 +364,31 @@ var t = new Date();
 
 
 
-    //   var ele = document.querySelectorAll(".hed2").innertext = "  <h1> this is only for check </h1>";
-	// var ele = document.querySelectorAll(".hed2")           sara hed2 classs ka document return karr diya gya 
+//   var ele = document.querySelectorAll(".hed2").innertext = "  <h1> this is only for check </h1>";
+// var ele = document.querySelectorAll(".hed2")           sara hed2 classs ka document return karr diya gya 
 
-	// var ele = document.querySelectorAll(".hed2").innerText
-    //           console.log(ele);
+// var ele = document.querySelectorAll(".hed2").innerText
+//           console.log(ele);
 
 //   var ele = document.getElementsByClassName(".hed2").innerText
-			//   var ele = document.querySelector(".vac").innertext;
+//   var ele = document.querySelector(".vac").innertext;
 
 
-			// var ele = document.querySelectorAll(".hed2")[1].innerText;
-
-
-
-
-			// var ele = document.querySelector(".vac h3").inner
-            //   console.log(ele);
+// var ele = document.querySelectorAll(".hed2")[1].innerText;
 
 
 
 
-			// ___________________________________________________________________________________________________________________________________________________________________________________________
+// var ele = document.querySelector(".vac h3").inner
+//   console.log(ele);
 
-			// _________________________________________DOM CSS STYLing_________________________________________________________________________________________________________________________________________________
-			
+
+
+
+// ___________________________________________________________________________________________________________________________________________________________________________________________
+
+// _________________________________________DOM CSS STYLing_________________________________________________________________________________________________________________________________________________
+
 // 3 method to set and get css value 
 // 1- Style
 // 2 - className
@@ -451,7 +451,7 @@ var t = new Date();
 // console.log(ele);
 
 
-                                        // length method of classList  - it basically use with . item(0,1,2--)  . retun item assign on particular index 
+// length method of classList  - it basically use with . item(0,1,2--)  . retun item assign on particular index 
 
 
 
@@ -464,9 +464,9 @@ var t = new Date();
 // console.log(l);
 // }
 
-                                          // contains method of classList it return true if that element exist ,, return false if not exist
+// contains method of classList it return true if that element exist ,, return false if not exist
 
-            
+
 
 // var ele;
 // document.querySelector(".HEADER2").addEventListener( "click", bac );
@@ -483,31 +483,29 @@ var t = new Date();
 //  <body>
 
 //  <button onclick="myFunction()">Try it</button>
- 
+
 //  <div id="myDIV">
 //  This is a DIV element.
 //  </div>
- 
+
 //  <script>
 //  function myFunction() {
 // 	var element = document.getElementById("myDIV");
 // 	element.classList.toggle("mystyle");
 //  }
 //  </script>
- 
+
 
 
 // ___________________________________________________________________________________________________________________________________________________________________________________________
 
 // _________________________________________Addeventlistner(event, fn_name, usecapture)________________________________________________________________________________________________________________________________________________
-			
 
-					 
+
+
 // syntax  ----
 
 // target.addEventListener("eventname like click/mouseenter etc",   fn name without () )
-
-
 
 
 // var lis = document.querySelector(".HEADER2").oncontextmenu = eee;
@@ -515,40 +513,36 @@ var t = new Date();
 // function eee(){  document.querySelector(".HEADER2").style.background = "red"                   }
 
 
-                                    // 2ND METHOd for addEventListener
+// 2ND METHOd for addEventListener
 
-				// 		 document.querySelector(".vac").addEventListener( "mouseenter",  abc);
-				// 		 function abc(){  document.querySelector(".HEADER2").style.background = "red"   
-						
-				// 		 document.querySelector(".HEADER2").style.color = "tan"   
-						
-				// 		}
-                
-	
-				// 		document.querySelector(".vac").addEventListener( "mouseenter",  abc);
-				// 		function abc(){  this.style.background = "tan"   
-				//    this.style.color = "black"   
+// 		 document.querySelector(".vac").addEventListener( "mouseenter",  abc);
+// 		 function abc(){  document.querySelector(".HEADER2").style.background = "red"   
 
-					   
-				// 	   }
-			   
+// 		 document.querySelector(".HEADER2").style.color = "tan"   
+
+// 		}
+
+
+// 		document.querySelector(".vac").addEventListener( "mouseenter",  abc);
+// 		function abc(){  this.style.background = "tan"   
+//    this.style.color = "black"   
+
+
+// 	   }
 
 
 // BY USING ARROW FUNCTION  
 
 // 				document.querySelector(".vac").addEventListener( "mouseenter", function(){  this.style.background = "tan"   
 // 				this.style.color = "black"   });
-			
+
 
 // // 3RD PARAMETER OF addEventListener UseCapture , return true or false 
-
 
 
 // // document.querySelector(".outer").addEventListener( "click", function(){ alert("oUUUter div ")   });
 
 // // document.querySelector(".inner").addEventListener( "click", function(){ alert(" INNER dDiv ")   });
-
-
 
 
 // document.querySelector(".outer").addEventListener( "click", function  bbb(){ confirm("outer div ")}, false    );
@@ -560,19 +554,11 @@ var t = new Date();
 // jo use capture false hoga woh baad mai call hoga kahin payyy bhee click karo aap
 
 
-
 // _____________________________//  removeEventListener("onclick",  fn_name);____________________________________________________________________________________________________________________________________________________________________________________________________________
 
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-
-
-
 // document.querySelector(".inner").removeEventListener( "onmouseenter", bbb );
-
-
-
-
 
 
 // _____________________________// DOM traveresal Method;____________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -580,18 +566,31 @@ var t = new Date();
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
-// 1 - parentNode 
-// 2 - ParentElement
-// 3 - children 
-// 4 - childNodes
-// 5 - firstChild 
-// 6 - firstElementChild
-// 7 - lastChild 
-// 8 - lastElementChild 
-// 9 - nextElementChild
-// 10 - nextSibling
-//  11 - previousElementSibling
-//  12 - previousSibling 
+// 1 - parentNode  - agar koi parent na ho toh fir bhe kuch n kuch return karga
+
+// 2 - ParentElement - agar koi parent na ho toh null return karega
+
+// 3 - children - target only child tag; use [ 0]- target only children at index 1
+
+// 4 - childNodes -   agar na hua toh bhe kuch n kuch toh return karega  like txetnode bhe return karega;;; ish mai bhe [0] scare brac use hota hai , .innerhtml karne pad  sara inner show kar dega
+
+// 5 - firstChild - kuch toh target karea like TAG, space,coomt,enter annything
+
+// 6 - firstElementChild - sirf child ko target karta hai 
+
+// 7 - lastChild           - kuch toh target karea like ,tag,space,commnt,Text,enter annything
+
+// 8 - lastElementChild  - sirf child ko target karta hai 
+
+// 9 - nextElementChild - sirf child  TAG ko target karta hai 
+
+// 10 - nextElementSibling     -      only nextElementsibling tag
+
+//  11 - previousElementSibling  - only previous tag  for innerhtml .innerHtml
+
+//  12 - previousSibling -- this count everthing lile tag, space, comment, etc 
+
+// 13 - nextSibling  -    this count everthing lile tag, space, comment, etc 
 // 
 
 
@@ -606,17 +605,17 @@ var t = new Date();
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------WE PLAY WITH TOGGLE FUNCTIONOVER HERE  
 
-var e=   document.getElementById("chd-c").parentElement.addEventListener( "click", vcv );
+var e = document.getElementById("chd-c").parentElement.addEventListener("click", vcv);
 
-function  vcv(){
-               document.getElementById("ou").classList.toggle("mystyle")
+function vcv() {
+	document.getElementById("ou").classList.toggle("mystyle")
 
 
 
 }
 
 
-    // var e=   document.getElementById("chd-c").parentElement.style.background= "blue";;
+// var e=   document.getElementById("chd-c").parentElement.style.background= "blue";;
 
 
 console.log(e);
