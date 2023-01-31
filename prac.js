@@ -17,7 +17,7 @@
 
 
 
-var sstr = "kashyap aman singh whats going";
+// var sstr = "kashyap aman singh whats going";
 // var p  = ;
 //   console.log(sstr.length);
 // console.log(sstr.toLowerCase());
@@ -145,7 +145,7 @@ var sstr = "kashyap aman singh whats going";
 
 // _________________________________________________SET DATE METHOD________________________________________________________________________________________________-
 
-var t = new Date();
+// var t = new Date();
 //  t.setDate(20);                PRINT THIS MONTHS DATE AND DAY
 // t.setFullYear(2029);              2029 KO DEVICE KAY DATE ANUSAR KON SA DATE HOGA
 
@@ -603,49 +603,141 @@ var t = new Date();
 // var e=   document.getElementById("chd-c").parentElement.style.background= "tan";;
 
 
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------WE PLAY WITH TOGGLE FUNCTIONOVER HERE  
+// ----------------------------------------------------------------------WE PLAY WITH TOGGLE FUNCTIONOVER HERE---------------------------------------------------------------------------------------  
 
-var e = document.getElementById("chd-c").parentElement.addEventListener("click", vcv);
+// var e = document.getElementById("chd-c").parentElement.addEventListener("click", vcv);
 
-function vcv() {
-	document.getElementById("ou").classList.toggle("mystyle")
-
-
-
-}
+// function vcv() {
+// 	document.getElementById("ou").classList.toggle("mystyle")
 
 
-// var e=   document.getElementById("chd-c").parentElement.style.background= "blue";;
+
+// }
 
 
-console.log(e);
+// // var e=   document.getElementById("chd-c").parentElement.style.background= "blue";;
 
 
+// console.log(e);
 
 
 
 
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________// DOM Create Method;____________________________________________________________________________________________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    // createElement - for tag directly from js
+	// createTextNode - for creatung only text
+	// createComment - for creating comment 
+
+
+
+//   var ele= document.createElement("h2") ;
+//   var text = document.createTextNode("i am just testing dom create methods ");
+//   var co= document.createComment("this is nothing but only a comment");
+
+//   console.log(e,t,co);
 
 
 
 
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________// DOM Append Method;____________________________________________________________________________________________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ 
+// appendChild
+// insertBefore
+
+
+    //   document.getElementById("appendtest").style.backgroundColor= "red"
+//      ele.appendChild(text);          1st step of append append text and tag
+
+// 2nd atep of append is append appended text and tag into where you want to append 
+
+//      //  document.getElementById("appendtest").appendChild(ele)   is tarah se append karne pad element last mai  append hoga 
+// 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// 	 var target = document.getElementById("he");
+//      target.addEventListener("click",mvc);
+
+// 	 function mvc(){  target.classList.toggle("mystyle") }
+
+// // ---------------------------------------------------------------------------------------------Toggle 
+
+// 	 var i = document.getElementById("appendtest").insertBefore(ele,target)
+// 	                // simply targetparent.insertBefore(1st parameter will be what to append like here ele , 2nd parameter will be before which  like here document.getElementById("he"). )
+
+// 	 // why query selector not work or get___byClassList
+// 	// document.getElementById("appendtest").appendChild(co);      append comment 
+//       console.log(ele);   
+// 	  console.log(i);   
+
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________DOM insertAdjacent Method____________________________________________________________________________________________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ 
+        //    here we dont need to create EventTarget, text, or comment seprately ///    these DOM insertAdjacent Method these append and create both work done by DOM insertAdjacent Method
+  
+		// insertAdjacentElement -  tag create and append ex -   <p></p>
+		// insertAdjacentHTML  - create tag and text both like this    ex- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio?</p>
+		// insertAdjacentTEXT  -  create text node and append them do both ex-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+
+// there is Total four positions to append 
+// 1- beforebegin    
+// 2 - afterbegin
+// 3 - beforeend
+// 4 - beforeend
+
+
+//   var ele= document.createElement("h2") ;
+//   var text = document.createTextNode("i am just testing dom create methods ");
+// //   var co= document.createComment("this is nothing but only a comment");
+
+// //   console.log(ele,text,co);
+
+// ele.appendChild(text);
+
+   
+
+//    document.getElementById("appendtest").insertAdjacentElement("beforebegin" , ele )
+
+// // vs ish se pehle wala jaise hum append kartay thay  Vs
+
+//  document.getElementById("appendtest").insertBefore(ele,target)
+
+
+
+//  insertAdjacentHTML  - create tag and text both like this    ex- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio?</p>
+//  ish mai hame alag se create aur append karne kee koi jaroorat nahi
+// SIRF 2 STEP MAI SAAB KAAM 
+
+
+// var newtagtext =  "<h2>Lorem, ipsum dolor sit amet consectetur adipisicing</h2>";
+// document.getElementById("appendtest").insertAdjacentHTML("beforebegin" , newtagtext )
+
+// var design = document.getElementById("appendtest").style.border = "2px solid blue"
+
+
+// __________________________________________________--------------------------------------------------------------------------------------------------------
+// // insertAdjacentText  -  create text node and append them do both ex-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+// _________________________________________________--------------------------------------------------------------------------------------------------------
+  
+         
+
+// var newtextonly =  "Lorem, ipsum dolor sit amet consectetur adipisicing";
+// document.getElementById("appendtest").insertAdjacentText("beforebegin" , newtextonly )
 
 
 
 
+// -----------------------------------------------------toggle only for prac ------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
+   var target = document.getElementById("appendtest");
+        target.addEventListener("click",mvc);
+   
+   	 function mvc(){  target.classList.toggle("mystyle") }
+   
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
