@@ -813,6 +813,7 @@
 // _____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________DOM isEqualNode() Method__________________________________________________________________________________________________________________________________________________________________________________
 // ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 // CONDITION To get compared 
 // 1 - Same Node Type   -- para comp para; list comp list ; div comp div 
 // 2 - same nodeName  --  li tag vs li tag 
@@ -828,6 +829,106 @@
 //   var eql = target.isEqualNode(compared);
 
 //   console.log(eql);
+
+
+
+
+//          _____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+//       _____________________________J.S Oop Introduction__________________________________________________________________________________________________________________________________________________________________________________
+//     ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+// A coding methology; it organise code and make it more usable ; help for easy debug ; use for big projects 
+
+//         Class - blurprint ; car    --- it has properties like let x, let y & METHODS LIKE Function ;  u can use only value that declared in class scope 
+
+// 		Object - buildings ; B.M.W 
+
+
+
+// how to declare class and maske methods :--
+
+//      class hello {              // declare a function
+
+//                  message(){    // methods 
+
+// 					console.log("Hello Everyone")
+// 				 }
+// 	 }
+
+//      let a = new hello();          // a is object over here for making object we use simply new + classname(
+//           a.message()            // for calling methods we use object.method name( )
+
+
+    // TYpes of methods :-
+
+	// Constructor fn -   Constructor() {   statement }            it has a speciality that it call automatically  if we make object ; ---- it mainly use for initialising the value 
+
+    // Prototype  method -- abc() {  console.log("hello world")}
+
+	// Static Method --     static name(){  console.log("hello world")       }   we use static word -------- this may call by without making object unlike upper two, we dont need to call it specifically
+
+
+        //    class car{
+        //            constructor(name, age ){
+		// 			//   constructor(){
+					
+					
+		// 			// let name;                   
+		// 			// Here we have declare as under constructor scope ; SO that we may use this for our any method
+                    
+		// 			// OR , By using in  constructor parameter
+
+		// 			this.name = name;                       // using construcot parameter   ;; for hold parameter value ; just use this.parameter name not need to declaer by let,var or const no nedd
+		// 			                                          // this represent the value of object that we have made by using  let  a =new object(); Here a 
+		// 			this.age = age;
+
+		// 			 console.log("Constructor function");}
+
+		// 		   hello(){ 
+		// 			 console.log("Constructor function my name is " + this.name +"  "  + this.age)                  }
+
+
+        //                 static staticmethod(){         // As we know we cannot cal it by makng objects   like a.staticmethod  ; so for calling this classname.name of static method like this car.staticmethod();
+
+		// 					console.log("We Just  make this function for checking static function")
+		// 				}
+
+
+
+
+		//    }
+
+
+
+
+
+        // //  let a = new car();                //    for let name; mean if we only declare variable;
+		// // let a = new car("aman", 34);    
+		// // let b = new car("Raman", 64);    
+		// // let c = new car("Caman", 34);                          // code kitta chota hoo gya baar baar declae karne kee jaroorat nahi rahi 
+		// // let d = new car("Baman", 24);    
+		// // let e = new car("KASHYAP", 64);   
+		// // let f  = new car("AYUSH", 13);  
+		// //   a.name = prompt("enter ");     //       for 1st one we use over here not for construcor parameter  
+		
+		//  a.hello();
+		//  b.hello();
+		//  c.hello();
+		//  d.hello();
+		//  e.hello();
+		//  f.hello();
+
+
+
+
+
+
+//          _____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+//       _____________________________J.S Inheritance__________________________________________________________________________________________________________________________________________________________________________________
+//     ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
 
 
 
