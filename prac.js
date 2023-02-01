@@ -644,7 +644,7 @@
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________// DOM Append Method;____________________________________________________________________________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
- 
+
 // appendChild
 // insertBefore
 
@@ -675,9 +675,9 @@
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________DOM insertAdjacent Method____________________________________________________________________________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
- 
+
         //    here we dont need to create EventTarget, text, or comment seprately ///    these DOM insertAdjacent Method these append and create both work done by DOM insertAdjacent Method
-  
+
 		// insertAdjacentElement -  tag create and append ex -   <p></p>
 		// insertAdjacentHTML  - create tag and text both like this    ex- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio?</p>
 		// insertAdjacentTEXT  -  create text node and append them do both ex-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -697,7 +697,7 @@
 
 // ele.appendChild(text);
 
-   
+
 
 //    document.getElementById("appendtest").insertAdjacentElement("beforebegin" , ele )
 
@@ -721,8 +721,8 @@
 // __________________________________________________--------------------------------------------------------------------------------------------------------
 // // insertAdjacentText  -  create text node and append them do both ex-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
 // _________________________________________________--------------------------------------------------------------------------------------------------------
-  
-         
+
+
 
 // var newtextonly =  "Lorem, ipsum dolor sit amet consectetur adipisicing";
 // document.getElementById("appendtest").insertAdjacentText("beforebegin" , newtextonly )
@@ -732,9 +732,9 @@
 
 //    var target = document.getElementById("appendtest");
 //         target.addEventListener("click",mvc);
-   
+
 //    	 function mvc(){  target.classList.toggle("mystyle") }
-   
+
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________DOM Replace and Remove  Method____________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -763,7 +763,7 @@
 // ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________DOM cloneNode Method____________________________________________________________________________________________________________________________________________________________________________________________________________
 //____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
- 
+
 //   Step- 1 -- target1.appendChild(target2.cloneNode(true))            Ex-document.getElementById("nd").children[1].appendChild(document.getElementById("st").children[0].cloneNode(true))
 // target1 -- where you have to paste copied item 
 //   target -- 2 - what to copy 
@@ -775,7 +775,7 @@
 	//   cloneNode(true)  ----------- This will copy tag and ineer text also agar false hota toh sirf tag  & attributecopy karta
 	//  then simply target where to copy and then append them where you have to paste 
 	// document.getElementById("nd").appendChild(copied);
-	
+
 	// OR
 
 	// document.getElementById("nd").children[1].appendChild(document.getElementById("st").children[0].cloneNode(true))
@@ -837,14 +837,11 @@
 //       _____________________________J.S Oop Introduction__________________________________________________________________________________________________________________________________________________________________________________
 //     ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-
 // A coding methology; it organise code and make it more usable ; help for easy debug ; use for big projects 
 
 //         Class - blurprint ; car    --- it has properties like let x, let y & METHODS LIKE Function ;  u can use only value that declared in class scope 
 
 // 		Object - buildings ; B.M.W 
-
-
 
 // how to declare class and maske methods :--
 
@@ -872,11 +869,11 @@
         //    class car{
         //            constructor(name, age ){
 		// 			//   constructor(){
-					
-					
+
+
 		// 			// let name;                   
 		// 			// Here we have declare as under constructor scope ; SO that we may use this for our any method
-                    
+
 		// 			// OR , By using in  constructor parameter
 
 		// 			this.name = name;                       // using construcot parameter   ;; for hold parameter value ; just use this.parameter name not need to declaer by let,var or const no nedd
@@ -894,13 +891,7 @@
 		// 					console.log("We Just  make this function for checking static function")
 		// 				}
 
-
-
-
 		//    }
-
-
-
 
 
         // //  let a = new car();                //    for let name; mean if we only declare variable;
@@ -911,7 +902,7 @@
 		// // let e = new car("KASHYAP", 64);   
 		// // let f  = new car("AYUSH", 13);  
 		// //   a.name = prompt("enter ");     //       for 1st one we use over here not for construcor parameter  
-		
+
 		//  a.hello();
 		//  b.hello();
 		//  c.hello();
@@ -920,48 +911,103 @@
 		//  f.hello();
 
 
-
-
-
-
 //          _____________________________________________________________________________________________________________________________________________________________________________________________________________________________
 //       _____________________________J.S Inheritance__________________________________________________________________________________________________________________________________________________________________________________
 //     ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
+//          lets suppose class A has some properties and methods 
+// And, Similarly     lets suppose class B also has some properties and methods 
+
+// What if we need to use method and prop of other class then we need ineritance ; 
+// whose property is use or inherited called Base Class 
+// who use property of base class called Derived class
+
+// multi-level Inheritance - When a class use Method & Property of derived and Base class both ; that class called multilevel inheritance class
+
+
+            //   syntax
+
+//  class fruit{  statement
+//  }
+
+//   class vegetable extends fruit { statement    //   }
+
+
+// make Object 
+// let f = new fruit();
+// let v = new vegetable();                    // this will use mwthod and property of both fruit and vegetable AS IT IS Derived CLass
+
+
+// ---------------------------------------------EXAMPLE - 1 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    //   class employe{ constructor(name){console.log("Constructor : Employ" + name)} }
+
+    //    class manager extends employe{
+
+	// 	constructor(name){
+    //              super()       // Agar derived method mai constructor method banaya toh hum  IsH super()  METHOD ko call karengay ; in constructor of derived class  
+	// 			console.log("Constructor : manager" + name)	} }
+
+
+    //          //  let a = new manager();            // agar Base class ke Mehtod Constructer ha toh serived class kay object ha nature bhe wAHI HOGA JO BASE CLASS KA HAI HERE CONSTRUCTOR ,.So, this may call automatically without making object
+	// 		   let a = new manager("Kashyap Aman Singh");          // just for practice ; Here we make object of Derived class and pass parametric value in derivrd method but it print BASE Method so that we use derived from base 
+    //         //    let b = new employe("aman");
+
+
+
+// ---------------------------------------------EXAMPLE - 2 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                    //    MAKE PROTOTYPE IN
+
+class employe {
+
+	constructor(name, age, salary) {
+		this.employname = name;
+		this.employAge = age;
+		this.employSALAry = salary;
+
+		console.log("Constructor : Employ" )
+	}
+
+      info(){
+		console.log("Manager-name : "  + this.employname + "  "  +   this.employAge+ "  "  + this.employSALAry  )
+	  }
+
+
+
+}
+
+class manager extends employe {
+
+	info(){     
+		
+		
+		   super.info();            // lekin agar Derived class mai bhe same method call kar de jo base class mai hai like here info(); toh aab derived class ka object.method of bse class ka call na kar kay derived class wale meehtod ko jyda valude adega aur isi koo call karega ; ASISAY condition ko avoid karnay kay liye hum super.method of base class ka use karen toh wahi cal hoga ; chayen hum derived kay object se hee call kyu na kare  
+		console.log("Employname : "  + this.employname)
+
+		super.info();    // ish case mai yeh baad mai call hoga after base class kay info() methodkay cal hone kay baad 
+
+	  }
+
+
+}
 
 
 
 
+//  let a = new manager();            // agar Base class ke Mehtod Constructer ha toh serived class kay object ha nature bhe wAHI HOGA JO BASE CLASS KA HAI HERE CONSTRUCTOR ,.So, this may call automatically without making object
+let a = new manager("Kashyap Aman Singh" , 34, 45000);          // just for practice ; Here we make object of Derived class and pass parametric value in derivrd method but it print BASE Method so that we use derived from base 
+   let b  = new manager("Kashyap Aman Singh" , 66, 45000);   
+   let c = new manager("Kashyap Aman Singh" , 77, 45000);   
+   let d = new manager("Kashyap Aman Singh" , 90, 45000);    
+   let e = new manager("Kashyap Aman Singh" , 99, 45000);   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// PROTOtype
+a.info()   ;               // aisa ish liya hu kee kyu kee A object hai derived class ka ; So a can also use all methods of construcor class as thats BASE class 
+b.info()   ;     
+c.info()   ;     
+d.info()   ;     
+e.info()   ;     
 
 
 
