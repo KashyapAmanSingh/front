@@ -823,11 +823,11 @@
 
 
 
-var target = document.getElementById("pehla").children[1];
-   var compared = document.getElementById("dusri").children[1]  ;
-  var eql = target.isEqualNode(compared);
+// var target = document.getElementById("pehla").children[1];
+//    var compared = document.getElementById("dusri").children[1]  ;
+//   var eql = target.isEqualNode(compared);
 
-  console.log(eql);
+//   console.log(eql);
 
 
 
