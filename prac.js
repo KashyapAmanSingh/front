@@ -1116,18 +1116,66 @@
 //   prom.catch(onreject);
 
 
+// -----------------------------------------------------------//EXAMPLE//-----------------------------------------------------------------//
+ 
+//  function prom( done){
+//        return new Promise(function (resolve, reject) {
+		
+// 		if (done){
+// 			resolve("I am a Successful Boy")
+// 		}   
+// 		else {  reject("I am a Failed")  }
+// 	   })
+//  }
+
+
+//  let onfulfill = (result) => {console.log(result);}                    
+
+//  let onreject = (error) => {console.log(error );}  
+
+
+//  prom(true).then(onfulfill);
+//   prom(false).catch(onreject);
+
+  // OR
+
+//   prom(true).then( (result) => {console.log(result);});        
+
+//   prom(true).catch( (error) => {console.log(error );}  );
+
+// console.log(prom(true));
 
 
 
 
+// --------------------------  Syntax  for setinterval 
 
 
 
+// function prom( done){
+// 	return new Promise(function (resolve, reject) {
+// 		console.log("data fetching please wait")
+// 	 setTimeout(()=>{
+
+// 		if (done){
+// 			resolve("I am a Successful Boy")
+// 		}   
+// 		else {  reject("I am a Failed")  }
+
+// 	   }, 1000)
+// 	 })
+	
+// }
 
 
+// prom(false).then( (result) => {console.log(result);});        
 
+//   prom(false).catch( (error) => {console.log(error );}  );
 
+  //OR  
+  // - do this in single line by using method chaining
 
+//   prom(false).then( (result) => {console.log(result);}).catch( (error) => {console.log(error );}  );
 
 
 
