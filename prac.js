@@ -2,6 +2,13 @@
 
 
 
+
+
+
+
+
+
+
 //           var a = Number(prompt("enter "));
 //           var b= Number(prompt("2nd time"));
 //           var c = a+b;
@@ -959,55 +966,142 @@
 // ---------------------------------------------EXAMPLE - 2 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                     //    MAKE PROTOTYPE IN
 
-class employe {
+// class employe {
 
-	constructor(name, age, salary) {
-		this.employname = name;
-		this.employAge = age;
-		this.employSALAry = salary;
+// 	constructor(name, age, salary) {
+// 		this.employname = name;
+// 		this.employAge = age;
+// 		this.employSALAry = salary;
 
-		console.log("Constructor : Employ" )
-	}
+// 		console.log("Constructor : Employ" )
+// 	}
 
-      info(){
-		console.log("Manager-name : "  + this.employname + "  "  +   this.employAge+ "  "  + this.employSALAry  )
-	  }
+//       info(){
+// 		console.log("Manager-name : "  + this.employname + "  "  +   this.employAge+ "  "  + this.employSALAry  )
+// 	  }
 
 
 
-}
+// }
 
-class manager extends employe {
+// class manager extends employe {
 
-	info(){     
+// 	info(){     
 		
 		
-		   super.info();            // lekin agar Derived class mai bhe same method call kar de jo base class mai hai like here info(); toh aab derived class ka object.method of bse class ka call na kar kay derived class wale meehtod ko jyda valude adega aur isi koo call karega ; ASISAY condition ko avoid karnay kay liye hum super.method of base class ka use karen toh wahi cal hoga ; chayen hum derived kay object se hee call kyu na kare  
-		console.log("Employname : "  + this.employname)
+// 		   super.info();            // lekin agar Derived class mai bhe same method call kar de jo base class mai hai like here info(); toh aab derived class ka object.method of bse class ka call na kar kay derived class wale meehtod ko jyda valude adega aur isi koo call karega ; ASISAY condition ko avoid karnay kay liye hum super.method of base class ka use karen toh wahi cal hoga ; chayen hum derived kay object se hee call kyu na kare  
+// 		console.log("Employname : "  + this.employname)
 
-		super.info();    // ish case mai yeh baad mai call hoga after base class kay info() methodkay cal hone kay baad 
+// 		super.info();    // ish case mai yeh baad mai call hoga after base class kay info() methodkay cal hone kay baad 
 
-	  }
-
-
-}
+// 	  }
 
 
+// }
 
 
-//  let a = new manager();            // agar Base class ke Mehtod Constructer ha toh serived class kay object ha nature bhe wAHI HOGA JO BASE CLASS KA HAI HERE CONSTRUCTOR ,.So, this may call automatically without making object
-let a = new manager("Kashyap Aman Singh" , 34, 45000);          // just for practice ; Here we make object of Derived class and pass parametric value in derivrd method but it print BASE Method so that we use derived from base 
-   let b  = new manager("Kashyap Aman Singh" , 66, 45000);   
-   let c = new manager("Kashyap Aman Singh" , 77, 45000);   
-   let d = new manager("Kashyap Aman Singh" , 90, 45000);    
-   let e = new manager("Kashyap Aman Singh" , 99, 45000);   
 
-// PROTOtype
-a.info()   ;               // aisa ish liya hu kee kyu kee A object hai derived class ka ; So a can also use all methods of construcor class as thats BASE class 
-b.info()   ;     
-c.info()   ;     
-d.info()   ;     
-e.info()   ;     
+
+// //  let a = new manager();            // agar Base class ke Mehtod Constructer ha toh serived class kay object ha nature bhe wAHI HOGA JO BASE CLASS KA HAI HERE CONSTRUCTOR ,.So, this may call automatically without making object
+// let a = new manager("Kashyap Aman Singh" , 34, 45000);          // just for practice ; Here we make object of Derived class and pass parametric value in derivrd method but it print BASE Method so that we use derived from base 
+//    let b  = new manager("Kashyap Aman Singh" , 66, 45000);   
+//    let c = new manager("Kashyap Aman Singh" , 77, 45000);   
+//    let d = new manager("Kashyap Aman Singh" , 90, 45000);    
+//    let e = new manager("Kashyap Aman Singh" , 99, 45000);   
+
+// // PROTOtype
+// a.info()   ;               // aisa ish liya hu kee kyu kee A object hai derived class ka ; So a can also use all methods of construcor class as thats BASE class 
+// b.info()   ;     
+// c.info()   ;     
+// d.info()   ;     
+// e.info()   ;     
+
+
+
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+// _____________________________________________________Module [Import & Export]____________________________________________________________________________________________________________________________________________________________________________________________________
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+// Modules
+// JavaScript modules allow you to break up your code into separate files.
+// This makes it easier to maintain a code-base.
+// Modules are imported from external files with the import statement.
+// Modules also rely on type="module" in the <script> tag.
+
+
+
+// Export
+// Modules with functions or variables can be stored in any external file.
+// There are two types of exports: Named Exports and Default Exports
+
+
+
+        // export let name = "yahoo baba";
+		// function hello{       }
+
+        // class user{               } 
+
+
+ // SYNTAX for import 
+			                // import{ fn_name, class_name, variable name , ETc }from './File.js'
+
+			               // name - jisko import karna hai
+		                   	// './File.js' -- jahan se import karna hoo under '  ./      '
+ 
+//   for include in HTML File 
+
+    //   IN Html document                //  < script type = "module" src= "./File.js">    < /script  >
+
+	                         // script type module dee do . Then , src mai module mai file location jish mai import kiye hoo like this from first file "./File2.js"
+
+
+
+
+// export let msg = "Aman Singh";   
+
+
+//   export  function helo(naam){
+// 	//console.log("function exporting in js" + naam)
+//       return `${naam}`
+
+// }
+
+//EXPORT constructor function
+//  export class test {
+// 	constructor(){console.log('aman is good ')}
+//  }
+
+ // hame baar baar export likhna oadd raha  hai ;;; lekin agar ek baar mai hee export karna hoo toh ---------   export{      msg , helo, test_____etc                 }
+
+//  export{      msg , helo, test_____etc                 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
