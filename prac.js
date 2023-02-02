@@ -1081,6 +1081,50 @@
 
 
 
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________________________________PROmise function ____________________________________________________________________________________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+//  if promise ful filled use `resolve()` --------------  .then();
+//  if promise not fulfilled use `reject()` --------------  .catch();
+//  Both then and call are call back fn  
+
+// SYNtAx ----
+
+// let prom = new Promise();
+
+// let prom = new Promise(function(){    
+                                   
+
+// });
+
+
+// let prom = new promise (function(resolve,reject){
+
+// 	if (condition){   resolve("Here is success" );   }
+// 	else {reject("Here on failure" );}
+// })
+
+        
+// let onfulfill = (result) => {console.log(result);}                    // result mai AYAGA JO BHE MESSAGE DALA HOGA resolve methtod mai like here resolve("Here os success" );;  
+
+// let onreject = (error) => {console.log(error );}                      // Similarly for error message from reject()
+
+// // for calling promise 
+//   prom.then(onfulfill);
+//   prom.catch(onreject);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
