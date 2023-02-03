@@ -1303,7 +1303,6 @@
 // 	xhttp.sent();                                                                                                            
 
 // 	------------------------------------------------------FOR INSTANCE-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
 // look HTML PAGE FOR BUTOON AD FN NAME RELATED QUERY 
 
             //   function loadData() {
@@ -1312,25 +1311,44 @@
 			// 		xhttp.onreadystatechange = function(){
 
             //             if (this.readyState == 4 && this.status == 200 ){
-			// 				console.log(this.responseText);
+			// 				// console.log(this.responseText);
+			// 				document.getElementById("demo").innerHTML = this.responseText;
+
+			// 			}  else if (  this.readyState == 4 && this.status == 404){             // agar file nahi mili toh 
+			// 				document.getElementById("demo").innerHTML= "file not found ";
 			// 			}
-
-
 			// 		};
 
-
-
-
-
-
-			// 		xhttp.open("GET", "Front/ajx.txt", true);    
+			// 		xhttp.open("OPEN", "https://jsonplaceholder.typicode.com/posts", true);    
 			// 		xhttp.send();
 
-
-
-
-
 			//   }
+
+// for more detail go network XHR section of console 
+
+
+// ----------------------------------------------------------------------------------------WARNINg--------------------------------------------------------------------------------------------
+// Lekin yeh AJAX bhoot complicated hoojata hai ;; isi liye ya toh jquery ka ya fetch ka use kartay hain 
+
+
+
+
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________________________________Fetch ____________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

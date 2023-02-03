@@ -169,46 +169,30 @@
 
 
 <!-- ajax button  -->
-<p id="demo">  Here we load data.</p>
+<!-- <p id="demo">  Here we load data.</p>
 <button onclick="loadData">Click </button>
- 
-<script>
-
-function loadData() {
+ <script>function loadData() {
                     var xhttp = new XMLHttpRequest();
 
 					xhttp.onreadystatechange = function(){
 
                         if (this.readyState == 4 && this.status == 200 ){
-							console.log(this.responseText);
+							
+							// document.getElementById("demo").innerHTML = this.responseText;
+               //Or in console              
+                   console.log(this.responseText);
+
+						}  else if (  this.readyState == 4 && this.status == 404){             // agar file nahi mili toh 
+							document.getElementById("demo").innerHTML= "file not found ";
 						}
-
-
 					};
 
 
+					xhttp.open("GET", "https://jsonplaceholder.typicode.com/posts", true);    
+					xhttp.send()
 
-
-
-
-					xhttp.open("GET", "front/ajx.txt", true);    
-					xhttp.send();
-
-
-
-
-
-			  }
-
-
-
-
-
-
-
-
-</script>
-
+			  }</script>
+ -->
 
   <script src="prac.js"></script>
 </body>
