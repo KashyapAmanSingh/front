@@ -1236,14 +1236,33 @@
 
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________________________________AJAX ____________________________________________________________________________________________________________________________________________________________________________________________________
-// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _______________Ajax IS A technique by which we create fast and dynamic web pages.__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    //   like we suppose we only want to change a single block of content not full page for Example - on crickbuz only runs change not whole change  ; SourceBuffer,reloading become fast                        
+
+//    A - Asynchronous
+//    J - javaScript
+//    A - and 
+//    X - XML ----- A format of data
+
+// XMLHttpRequest - A java script that send request on server but in Background of server 
+// it held data in total 3 format -- 
+//    1- Text File      2 - XML Data      3 - JSON Data 
 
 
 
+// XMLHttpRequest divied request in 5 step  --  called readyState 
+//  readyState  0 - request not initilized 
+//  readyState  1 - server connection established
+//  readyState  2 - request received     
+//  readyState 3 - processing start on the request that we have sent 
+//  readyState 4 - request finished and response is ready 
 
 
 
-
+// But the question is that what server Respond in two format 1st is Status & 2ND is  || responseText || retrun by server if we had request for TEXT AGAR XML REquest kiya hota toh || responseXML || 
+and  Status return 200-  mean "OK"
+and  Status return 403  -  mean "FOrbiddden"
+and  Status return 404   -  mean "Not Found"
 
 
 
@@ -1262,6 +1281,8 @@
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________________________________Async & Await____________________________________________________________________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
 //  Comes after ES6 IN 2017
 // same like Promise functon ; if it will get resolved then similarly like Promise it will call .then()  & .catch()
 
