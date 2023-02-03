@@ -1232,10 +1232,9 @@
 
 
 
-
-
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________________________________AJAX ____________________________________________________________________________________________________________________________________________________________________________________________________
+
 // _______________Ajax IS A technique by which we create fast and dynamic web pages.__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
     //   like we suppose we only want to change a single block of content not full page for Example - on crickbuz only runs change not whole change  ; SourceBuffer,reloading become fast                        
 
@@ -1258,11 +1257,81 @@
 //  readyState 4 - request finished and response is ready 
 
 
-
 // But the question is that what server Respond in two format 1st is Status & 2ND is  || responseText || retrun by server if we had request for TEXT AGAR XML REquest kiya hota toh || responseXML || 
-and  Status return 200-  mean "OK"
-and  Status return 403  -  mean "FOrbiddden"
-and  Status return 404   -  mean "Not Found"
+// and  Status return 200-  mean "OK"
+// and  Status return 403  -  mean "FOrbiddden"
+// and  Status return 404   -  mean "Not Found"
+// etc search on google http status code 
+
+
+// HOw to use 
+// Step 1- make object of XMLHttpRequest
+// Step 2 -  for getting data we use   ---   take three parameter  Method - Post(in post data is in hidden form we use for log in log out type case ) & Get ; filename.txt &    ASync Mode true{true mean async mode is on ;; false mean sync mode }
+// step -3 --  xhttp.send();                       By this we send request to server 
+
+
+
+// variable_name.open("GET","filename.txt", true )                             
+// for send-------------------
+// xhttp.send();                       By this we send request to server 
+
+// for checking readyState
+
+
+// var xhttp = new XMLHttpRequest();                                                                                                                // step - 1  make object
+
+// variable_name.onreadystatechange = function()  {                                                                                               // step 4 check ready state
+// 	// In statement we chacking the condition is data comes by making condition  
+//            if (this.onreadystate == 4 && this.status == 200){    document.querySelector("where to set fetch data").innerHTML= this.responseText || requestHtml       }   //     jo address ko target kiye honge sirf wahi refresh hoga baki ka nhai liker here queryselector("refresh only this ")
+
+// };
+
+
+//       xhttp.open("GET", "FILENAME.txt", true);                                                                                           // step-2 whcih file to open 
+// 	  xhttp.sent();                                                                                                                     // step- 3 sent 
+
+
+// // --------------------------------------------------------------------------------------------------------------------------fresh code syntax of this----------------------------------------------------------------------------------------------
+
+// var xhttp = new XMLHttpRequest();                                                                                                                // step - 1  make object
+
+// xhttp.onreadystatechange = function()  {    
+// 	if (this.onreadystate == 4 && this.status == 200){    document.querySelector("where to set fetch data").innerHTML= this.responseText || requestHtml       }  };\
+
+
+// 	xhttp.open("GET", "FILENAME.txt", true);                                                                                          
+// 	xhttp.sent();                                                                                                            
+
+// 	------------------------------------------------------FOR INSTANCE-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// look HTML PAGE FOR BUTOON AD FN NAME RELATED QUERY 
+
+            //   function loadData() {
+            //         var xhttp = new XMLHttpRequest();
+
+			// 		xhttp.onreadystatechange = function(){
+
+            //             if (this.readyState == 4 && this.status == 200 ){
+			// 				console.log(this.responseText);
+			// 			}
+
+
+			// 		};
+
+
+
+
+
+
+			// 		xhttp.open("GET", "Front/ajx.txt", true);    
+			// 		xhttp.send();
+
+
+
+
+
+			//   }
+
 
 
 

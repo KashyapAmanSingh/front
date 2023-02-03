@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="flex.css">
+  <!-- <link rel="stylesheet" href="flex.css"> -->
        
        <!-- <script type="module" src="./prac.js"></script> -->
 </head>
@@ -81,7 +81,7 @@
   <!-- </div> -->
 
 
-  <div id="ou">
+  <!-- <div id="ou">
     <h2>outer wla ha yeh</h2>
 
     <div id="in">
@@ -107,7 +107,7 @@
       beatae placeat dolorem non molestias quos adipisci ipsam, possimus nihil suscipit. Laboriosam, ut. Laboriosam
       harum corporis nobis? </p> 
     </p>
-  </div>
+  </div> -->
 
     
 <!-- Tag	Description
@@ -168,11 +168,46 @@
 
 
 
+<!-- ajax button  -->
+<p id="demo">  Here we load data.</p>
+<button onclick="loadData">Click </button>
+ 
+<script>
+
+function loadData() {
+                    var xhttp = new XMLHttpRequest();
+
+					xhttp.onreadystatechange = function(){
+
+                        if (this.readyState == 4 && this.status == 200 ){
+							console.log(this.responseText);
+						}
+
+
+					};
 
 
 
 
 
+
+					xhttp.open("GET", "front/ajx.txt", true);    
+					xhttp.send();
+
+
+
+
+
+			  }
+
+
+
+
+
+
+
+
+</script>
 
 
   <script src="prac.js"></script>
