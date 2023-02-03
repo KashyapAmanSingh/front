@@ -633,9 +633,9 @@
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________// DOM Create Method;____________________________________________________________________________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-    // createElement - for tag directly from js
-	// createTextNode - for creatung only text
-	// createComment - for creating comment 
+// createElement - for tag directly from js
+// createTextNode - for creatung only text
+// createComment - for creating comment 
 
 
 
@@ -656,7 +656,7 @@
 // insertBefore
 
 
-    //   document.getElementById("appendtest").style.backgroundColor= "red"
+//   document.getElementById("appendtest").style.backgroundColor= "red"
 //      ele.appendChild(text);          1st step of append append text and tag
 
 // 2nd atep of append is append appended text and tag into where you want to append 
@@ -683,11 +683,11 @@
 // _____________________________DOM insertAdjacent Method____________________________________________________________________________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-        //    here we dont need to create EventTarget, text, or comment seprately ///    these DOM insertAdjacent Method these append and create both work done by DOM insertAdjacent Method
+//    here we dont need to create EventTarget, text, or comment seprately ///    these DOM insertAdjacent Method these append and create both work done by DOM insertAdjacent Method
 
-		// insertAdjacentElement -  tag create and append ex -   <p></p>
-		// insertAdjacentHTML  - create tag and text both like this    ex- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio?</p>
-		// insertAdjacentTEXT  -  create text node and append them do both ex-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+// insertAdjacentElement -  tag create and append ex -   <p></p>
+// insertAdjacentHTML  - create tag and text both like this    ex- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio?</p>
+// insertAdjacentTEXT  -  create text node and append them do both ex-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
 
 // there is Total four positions to append 
 // 1- beforebegin    
@@ -779,15 +779,15 @@
 
 // var target = document.getElementById("st").children[0];
 //       var copied = target.cloneNode(true)
-	//   cloneNode(true)  ----------- This will copy tag and ineer text also agar false hota toh sirf tag  & attributecopy karta
-	//  then simply target where to copy and then append them where you have to paste 
-	// document.getElementById("nd").appendChild(copied);
+//   cloneNode(true)  ----------- This will copy tag and ineer text also agar false hota toh sirf tag  & attributecopy karta
+//  then simply target where to copy and then append them where you have to paste 
+// document.getElementById("nd").appendChild(copied);
 
-	// OR
+// OR
 
-	// document.getElementById("nd").children[1].appendChild(document.getElementById("st").children[0].cloneNode(true))
+// document.getElementById("nd").children[1].appendChild(document.getElementById("st").children[0].cloneNode(true))
 
- 	// console.log(copied)
+// console.log(copied)
 
 
 // ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -864,58 +864,58 @@
 //           a.message()            // for calling methods we use object.method name( )
 
 
-    // TYpes of methods :-
+// TYpes of methods :-
 
-	// Constructor fn -   Constructor() {   statement }            it has a speciality that it call automatically  if we make object ; ---- it mainly use for initialising the value 
+// Constructor fn -   Constructor() {   statement }            it has a speciality that it call automatically  if we make object ; ---- it mainly use for initialising the value 
 
-    // Prototype  method -- abc() {  console.log("hello world")}
+// Prototype  method -- abc() {  console.log("hello world")}
 
-	// Static Method --     static name(){  console.log("hello world")       }   we use static word -------- this may call by without making object unlike upper two, we dont need to call it specifically
-
-
-        //    class car{
-        //            constructor(name, age ){
-		// 			//   constructor(){
+// Static Method --     static name(){  console.log("hello world")       }   we use static word -------- this may call by without making object unlike upper two, we dont need to call it specifically
 
 
-		// 			// let name;                   
-		// 			// Here we have declare as under constructor scope ; SO that we may use this for our any method
-
-		// 			// OR , By using in  constructor parameter
-
-		// 			this.name = name;                       // using construcot parameter   ;; for hold parameter value ; just use this.parameter name not need to declaer by let,var or const no nedd
-		// 			                                          // this represent the value of object that we have made by using  let  a =new object(); Here a 
-		// 			this.age = age;
-
-		// 			 console.log("Constructor function");}
-
-		// 		   hello(){ 
-		// 			 console.log("Constructor function my name is " + this.name +"  "  + this.age)                  }
+//    class car{
+//            constructor(name, age ){
+// 			//   constructor(){
 
 
-        //                 static staticmethod(){         // As we know we cannot cal it by makng objects   like a.staticmethod  ; so for calling this classname.name of static method like this car.staticmethod();
+// 			// let name;                   
+// 			// Here we have declare as under constructor scope ; SO that we may use this for our any method
 
-		// 					console.log("We Just  make this function for checking static function")
-		// 				}
+// 			// OR , By using in  constructor parameter
 
-		//    }
+// 			this.name = name;                       // using construcot parameter   ;; for hold parameter value ; just use this.parameter name not need to declaer by let,var or const no nedd
+// 			                                          // this represent the value of object that we have made by using  let  a =new object(); Here a 
+// 			this.age = age;
+
+// 			 console.log("Constructor function");}
+
+// 		   hello(){ 
+// 			 console.log("Constructor function my name is " + this.name +"  "  + this.age)                  }
 
 
-        // //  let a = new car();                //    for let name; mean if we only declare variable;
-		// // let a = new car("aman", 34);    
-		// // let b = new car("Raman", 64);    
-		// // let c = new car("Caman", 34);                          // code kitta chota hoo gya baar baar declae karne kee jaroorat nahi rahi 
-		// // let d = new car("Baman", 24);    
-		// // let e = new car("KASHYAP", 64);   
-		// // let f  = new car("AYUSH", 13);  
-		// //   a.name = prompt("enter ");     //       for 1st one we use over here not for construcor parameter  
+//                 static staticmethod(){         // As we know we cannot cal it by makng objects   like a.staticmethod  ; so for calling this classname.name of static method like this car.staticmethod();
 
-		//  a.hello();
-		//  b.hello();
-		//  c.hello();
-		//  d.hello();
-		//  e.hello();
-		//  f.hello();
+// 					console.log("We Just  make this function for checking static function")
+// 				}
+
+//    }
+
+
+// //  let a = new car();                //    for let name; mean if we only declare variable;
+// // let a = new car("aman", 34);    
+// // let b = new car("Raman", 64);    
+// // let c = new car("Caman", 34);                          // code kitta chota hoo gya baar baar declae karne kee jaroorat nahi rahi 
+// // let d = new car("Baman", 24);    
+// // let e = new car("KASHYAP", 64);   
+// // let f  = new car("AYUSH", 13);  
+// //   a.name = prompt("enter ");     //       for 1st one we use over here not for construcor parameter  
+
+//  a.hello();
+//  b.hello();
+//  c.hello();
+//  d.hello();
+//  e.hello();
+//  f.hello();
 
 
 //          _____________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -933,7 +933,7 @@
 // multi-level Inheritance - When a class use Method & Property of derived and Base class both ; that class called multilevel inheritance class
 
 
-            //   syntax
+//   syntax
 
 //  class fruit{  statement
 //  }
@@ -948,23 +948,23 @@
 
 // ---------------------------------------------EXAMPLE - 1 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    //   class employe{ constructor(name){console.log("Constructor : Employ" + name)} }
+//   class employe{ constructor(name){console.log("Constructor : Employ" + name)} }
 
-    //    class manager extends employe{
+//    class manager extends employe{
 
-	// 	constructor(name){
-    //              super()       // Agar derived method mai constructor method banaya toh hum  IsH super()  METHOD ko call karengay ; in constructor of derived class  
-	// 			console.log("Constructor : manager" + name)	} }
+// 	constructor(name){
+//              super()       // Agar derived method mai constructor method banaya toh hum  IsH super()  METHOD ko call karengay ; in constructor of derived class  
+// 			console.log("Constructor : manager" + name)	} }
 
 
-    //          //  let a = new manager();            // agar Base class ke Mehtod Constructer ha toh serived class kay object ha nature bhe wAHI HOGA JO BASE CLASS KA HAI HERE CONSTRUCTOR ,.So, this may call automatically without making object
-	// 		   let a = new manager("Kashyap Aman Singh");          // just for practice ; Here we make object of Derived class and pass parametric value in derivrd method but it print BASE Method so that we use derived from base 
-    //         //    let b = new employe("aman");
+//          //  let a = new manager();            // agar Base class ke Mehtod Constructer ha toh serived class kay object ha nature bhe wAHI HOGA JO BASE CLASS KA HAI HERE CONSTRUCTOR ,.So, this may call automatically without making object
+// 		   let a = new manager("Kashyap Aman Singh");          // just for practice ; Here we make object of Derived class and pass parametric value in derivrd method but it print BASE Method so that we use derived from base 
+//         //    let b = new employe("aman");
 
 
 
 // ---------------------------------------------EXAMPLE - 2 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                    //    MAKE PROTOTYPE IN
+//    MAKE PROTOTYPE IN
 
 // class employe {
 
@@ -987,8 +987,8 @@
 // class manager extends employe {
 
 // 	info(){     
-		
-		
+
+
 // 		   super.info();            // lekin agar Derived class mai bhe same method call kar de jo base class mai hai like here info(); toh aab derived class ka object.method of bse class ka call na kar kay derived class wale meehtod ko jyda valude adega aur isi koo call karega ; ASISAY condition ko avoid karnay kay liye hum super.method of base class ka use karen toh wahi cal hoga ; chayen hum derived kay object se hee call kyu na kare  
 // 		console.log("Employname : "  + this.employname)
 
@@ -1040,23 +1040,23 @@
 
 
 
-        // export let name = "yahoo baba";
-		// function hello{       }
+// export let name = "yahoo baba";
+// function hello{       }
 
-        // class user{               } 
+// class user{               } 
 
 
- // SYNTAX for import 
-			                // import{ fn_name, class_name, variable name , ETc }from './File.js'
+// SYNTAX for import 
+// import{ fn_name, class_name, variable name , ETc }from './File.js'
 
-			               // name - jisko import karna hai
-		                   	// './File.js' -- jahan se import karna hoo under '  ./      '
- 
+// name - jisko import karna hai
+// './File.js' -- jahan se import karna hoo under '  ./      '
+
 //   for include in HTML File 
 
-    //   IN Html document                //  < script type = "module" src= "./File.js">    < /script  >
+//   IN Html document                //  < script type = "module" src= "./File.js">    < /script  >
 
-	                         // script type module dee do . Then , src mai module mai file location jish mai import kiye hoo like this from first file "./File2.js"
+// script type module dee do . Then , src mai module mai file location jish mai import kiye hoo like this from first file "./File2.js"
 
 
 
@@ -1075,7 +1075,7 @@
 // 	constructor(){console.log('aman is good ')}
 //  }
 
- // hame baar baar export likhna oadd raha  hai ;;; lekin agar ek baar mai hee export karna hoo toh ---------   export{      msg , helo, test_____etc                 }
+// hame baar baar export likhna oadd raha  hai ;;; lekin agar ek baar mai hee export karna hoo toh ---------   export{      msg , helo, test_____etc                 }
 
 //  export{      msg , helo, test_____etc                 }
 
@@ -1095,7 +1095,7 @@
 // let prom = new Promise();
 
 // let prom = new Promise(function(){    
-                                   
+
 
 // });
 
@@ -1106,7 +1106,7 @@
 // 	else {reject("Here on failure" );}
 // })
 
-        
+
 // let onfulfill = (result) => {console.log(result);}                    // result mai AYAGA JO BHE MESSAGE DALA HOGA resolve methtod mai like here resolve("Here os success" );;  
 
 // let onreject = (error) => {console.log(error );}                      // Similarly for error message from reject()
@@ -1117,10 +1117,10 @@
 
 
 // -----------------------------------------------------------//EXAMPLE//-----------------------------------------------------------------//
- 
+
 //  function prom( done){
 //        return new Promise(function (resolve, reject) {
-		
+
 // 		if (done){
 // 			resolve("I am a Successful Boy")
 // 		}   
@@ -1137,7 +1137,7 @@
 //  prom(true).then(onfulfill);
 //   prom(false).catch(onreject);
 
-  // OR
+// OR
 
 //   prom(true).then( (result) => {console.log(result);});        
 
@@ -1164,7 +1164,7 @@
 
 // 	   }, 1000)
 // 	 })
-	
+
 // }
 
 
@@ -1172,13 +1172,96 @@
 
 //   prom(false).catch( (error) => {console.log(error );}  );
 
-  //OR  
-  // - do this in single line by using method chaining
+//OR  
+// - do this in single line by using method chaining
 
 //   prom(false).then( (result) => {console.log(result);}).catch( (error) => {console.log(error );}  );
 
 
 
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________________________________PROmise.all() function ____________________________________________________________________________________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+//   promise.all()  -- this is fully resolve or rejected 
+//    must be resolved and agar koi ek promise bhe resolve nahi hua toh saab fail hoo jayegaa
+
+
+//   similar syntax like upper
+
+// lets multiple promise  promise
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+//   Promise.all([p1,p2,p3,p3,p3]).then().catch();
+
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+// let p1 = new Promise((resolve, reject) => { 
+// 	// setTimeout(() => {
+// 		//  console.log(" checking only promise.all 1st Method");
+// 		  resolve(40); },
+// 		//    1 * 1000); }
+// 		)
+
+// let p2 = new Promise((resolve, reject) => { 
+// 	// setTimeout(() => { console.log(" checking only promise.all 2nd method"); 
+// 	resolve(30); },
+// 	//  2 * 1000); }
+// 	)
+
+// let p3 = new Promise((resolve, reject) => { 
+// 	// setTimeout(() => {
+// 		//  console.log("checking only promise.all  3rd Method");
+// 		  resolve(50); },
+// 		//    3 * 1000); }
+// 		)
+
+
+// 		// we taKe total & for in loop to print the value in parameter that we gave in resolve(); so to print the value that comes in resolve method to know total sum ;
+
+// var total = 0;
+// Promise.all([p1, p2, p3]).then((result) => {           // Agar sara promise resolve  hoga tabhi then function chalega Agar ek bhe Promise reject hoo jata hai toh catch function chal jayega
+// 	 for(var i in result) { total += result[i] }      // for loop for know total sum of number that is passed in resolved parameter
+// 	  console.log(result);
+// 	   console.log(total)
+// 	}).catch((error) => console.log(error))
+
+
+
+
+
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________________________________AJAX ____________________________________________________________________________________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// _____________________________________________________Async & Await____________________________________________________________________________________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
 
