@@ -1262,6 +1262,48 @@
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________________________________Async & Await____________________________________________________________________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+//  Comes after ES6 IN 2017
+// same like Promise functon ; if it will get resolved then similarly like Promise it will call .then()  & .catch()
+
+//    to get rid of calling resolve & reject again and again ; so to avoid those complication we use ASync functon 
+//    THIS is similarly like normal function and work like promise just like write  async before function 
+
+// SYNTAX
+
+//   async function test(){
+
+//                    //STATEMENT
+//   }
+
+
+//   let test = async()  => { return "hello"};       arroe fn_async
+// async function test(){
+
+// 	return "Hello"
+
+// 	 }
+	
+// 	 console.log(test())             // return String value this normally works in Asynchronous fn
+	
+//           test().then((result)=>{  console.log(  result );         })                // SAMe like Promise lekin resolve reject kee koi jaroorat nahi 
+
+
+
+//Await ---        This Await method also Works under async function
+                     // use to control pace of printing of async statement 
+				
+
+
+					 async function test(){
+                                console.log("1 -- mESSAGE");
+								console.log("2 -- mESSAGE");
+							console.log("3 -- mESSAGE");
+								console.log("4 -- mESSAGE")
+						
+					
+						 }
+						test();
+						 console.log("5 -- mESSAGE")
 
 
 
@@ -1270,6 +1312,14 @@
 
 
 
+
+
+
+						//  console.log(test())             // return String value this normally works in Asynchronous fn
+						
+							//   test().then((result)=>{  console.log(  result );         })                // SAMe like Promise lekin resolve reject kee koi jaroorat nahi 
+					
+					
 
 
 
