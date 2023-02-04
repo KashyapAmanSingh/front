@@ -1404,7 +1404,7 @@
 
  
 //  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// //  Go here and see all code structure for different method like INSErt, update, output etc ;;Only for help 
+// //  Go here "    https://jsonplaceholder.typicode.com/guide/        "  and see all code structure for different method like INSErt, update, output etc ;;Only for help 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -1435,14 +1435,20 @@
 
 // fetch('https://jsonplaceholder.typicode.com/posts/1', {
 //   method: 'PUT',
-//   body: JSON.stringify({
+//   body: JSON.stringify({                           for sent data in json format
 //     id: 1, 
 //     title: 'foo',
 //     body: 'bar',
 //     userId: 1,
 //   }),
+       
+        // body : new FormData(document.getElement(id_of_form));              for send data in of form in form format
+
 //   headers: {
-//     'Content-type': 'application/json; charset=UTF-8',
+//     'Content-type': 'application/json; charset=UTF-8',                  
+
+// 'Content-Type' : 'application/x-www-form-urlencoded',                for sending data in form format we use this content type 
+
 //   },
 // })
 //   .then((response) => response.json())
@@ -1457,24 +1463,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ETC FOR MORE JSON METHOD CODE VISIT WEBSITE  ---------        https://jsonplaceholder.typicode.com/guide/
 
 
 
