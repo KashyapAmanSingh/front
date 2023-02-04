@@ -1337,19 +1337,48 @@
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________________________________Fetch ____________________________________________________________________________________________________________________________________________________________________________________________________
 
+        //   fetch make rid from hectic coding of js XMLHttpRequest  
+		//   but why we use fetch if we aleady have jquery that make coding  easy ????    but the is a problem that JQUERY use  work only if there is a file of size greater than 1 M.b then only we can use jquery 
+
+            //  fetch() comes in ES6 ;     Always use with server 
+			//  Insert
+            //  Update 
+			//  Read 
+			//  Delete 
+
+
+//SYNTAX
+    //   fetch(file/URL).then(function(reponse){ return response.data_format like JSON/TEXT }).then(function(result){console.log(result)}).catch(function(error){console.log(error)}); ------> This fetch method return promise . But here then function also return again a promise 
+//
+//   fetch(fiel?URI).then(() => return Response.data_type).then((result)=> console.log(result)  ).catch((error)=>console.log(error))
 
 
 
 
+// HOW IT WORKS ??
+//  DATA file ya url se aaya fetch() kay dwara fir .then() mai function kay statement mai return kar dengay kuch aisay Response.data_format fir dubara .then() aab ish mai response sse jo dast aaaya ha usko bhe fn kay dwara print karwyengay .. Lekin agar error aaya toh cathc fn bhe  
 
 
+// fetch("ajx.txt").then((response)=>return response.text() or for .json());      step-1 mai coding
+// fetch("ajx.txt").then((response)=> response.text()).then((data_ish_mai_aaya)  =>  console.log(data_ish_mai_aaya)).catch((error)=>console.log(error));                                  
+
+//shortest
+// fetch("https://jsonplaceholder.typicode.com/comments").then((response)=> response.json())
+// .then(data  =>  console.log(data))
+// .catch(error=>console.log("error so cant fetch data"+ error));                                  
 
 
+// agar sara print karwana hoo toh hum for in loop use kar lengya 2nd wale promise mai 
+fetch("https://jsonplaceholder.typicode.com/comments").then((response)=> response.json())
+.then(data  => { console.log(data) 
+                  for ( let index in data) {
+					document.write(`${data[index].name } ---->    ${data[index].id }   -----        ${data[index].postId } <br>`)
+					// document.write(``)
+					// document.write(``)
+				  }
 
-
-
-
-
+})
+.catch(error=>console.log("error so cant fetch data"+ error));                                  
 
 
 
