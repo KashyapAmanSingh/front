@@ -1367,18 +1367,107 @@
 // .then(data  =>  console.log(data))
 // .catch(error=>console.log("error so cant fetch data"+ error));                                  
 
+// _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________--
 
-// agar sara print karwana hoo toh hum for in loop use kar lengya 2nd wale promise mai 
-fetch("https://jsonplaceholder.typicode.com/comments").then((response)=> response.json())
-.then(data  => { console.log(data) 
-                  for ( let index in data) {
-					document.write(`${data[index].name } ---->    ${data[index].id }   -----        ${data[index].postId } <br>`)
-					// document.write(``)
-					// document.write(``)
-				  }
+// agar sara print karwana hoo toh hum for in loop use kar lengya 2nd wale promise mai
 
-})
-.catch(error=>console.log("error so cant fetch data"+ error));                                  
+// fetch("https://jsonplaceholder.typicode.com/comments").then((response)=> response.json())
+// .then(data  => { console.log(data) 
+//                   for ( let index in data) {
+// 					document.write(`${data[index].name } ---->    ${data[index].id }   -----        ${data[index].postId } <br>`)
+				
+// 				  }
+
+// })
+// .catch(error=>console.log("error so cant fetch data"+ error));                                  
+
+
+
+// ------------------------------------  // AAB TAK HUMNAY DATA ko save karna dekha hai aab server par kaise insert kartya hain woh dekhnagya
+
+//  fetch(file ,  {
+//                    method : "POST",            // POST send data ////  PUT update data  ////  GET defalut hia for read   ////   DELETE for deleting the data 
+//                     body : data,                // jo humko server par save karana hai yeh Form data /////  Json data etc
+                   
+// 					// body : data.stringify(   ),     hum direct data nahi lee sakte user se toh .stringify  J.S data ko jason form mai la dega   
+					  
+// 					header :{                   // header kay ander hum jo type ka data bhejnay wale hain woh likhntay hain aisay 'Content-Type' : 'application/json'
+// 						'Content-Type' : 'application/json',        //  jo bhe hum body kay through data bhej rahe hain woh json ka data hai
+ 
+// 						'Content-Type' : 'application/x-www-form-urlencoded',                  //   FORM ka data hai
+
+
+// 					  }
+
+
+//  })
+
+ 
+//  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// //  Go here and see all code structure for different method like INSErt, update, output etc ;;Only for help 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//  for data insert -- dont remeber all these go on website fake json and on guide over there 
+
+
+// var user_ka_data =  {title: 'our datdas name',
+// body: 'humnay isko stringayfy kay parameter se bahar nikla diya h aab se send hoo seke aur ISKA VARIABLE NAMe ko Stringfy(varaible_name ) mai save hai',
+// userId: 1000000,
+// }
+
+
+// fetch('https://jsonplaceholder.typicode.com/posts', {
+//   method: 'POST',
+//   body: JSON.stringify({user_ka_data  }),
+//   headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//   },
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+
+//  why we approx all time we sent data in json form because json is fully universal ;
+
+// this code for data Update 
+
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1', {
+//   method: 'PUT',
+//   body: JSON.stringify({
+//     id: 1, 
+//     title: 'foo',
+//     body: 'bar',
+//     userId: 1,
+//   }),
+//   headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//   },
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+
+// for data delete 
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1', {      // bass jisko delete  karna wuska number after posts/1  for delete 2nd data---,posts/1/2/2/3/3/3=----------
+//   method: 'DELETE',
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
