@@ -1500,7 +1500,7 @@
 	
 // 	 console.log(test())             // return String value this normally works in Asynchronous fn
 	
-//           test().then((result)=>{  console.log(  result );         })                // SAMe like Promise lekin resolve reject kee koi jaroorat nahi 
+        // test().then((result)=>{  console.log(  result );         })                // SAMe like Promise lekin resolve reject kee koi jaroorat nahi 
 
 
 
