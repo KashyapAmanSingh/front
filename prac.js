@@ -1483,7 +1483,7 @@
 //    to get rid of calling resolve & reject again and again ; so to avoid those complication we use ASync functon 
 //    THIS is similarly like normal function and work like promise just like write  async before function 
 
-// SYNTAX
+SYNTAX
 
 //   async function test(){
 
