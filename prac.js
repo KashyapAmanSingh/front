@@ -1642,31 +1642,32 @@
 
 			
 		
-function *generatorfn(){
+// function *generatorfn(){
                 //  console.log("first message");
 				//  yield "first yield";
 				//  console.log("second message");
 				//  yield "second  22 yield";
+			//	return;                                     // yahan se aagay ka code nahi read hoga ; kyu kee yahin se end hoo gya 
 				//  console.log("Third message");
 				
 				//  console.log("Fourth message");
 //OR 
 
-                     let nextnum = 300;
-					 while(true ){
-						yield(nextnum++);
+                 //    let nextnum = 300;
+				//	 while(true ){
+					//	yield(nextnum++);
 
 // PARAMETRIC VALUE   
                     //  let result = (yield)*10;
-					let arrayresult = [yield,yield,yield,yield,yield,yield];         // jab 6 yield ke entry lene ho 
+				//	let arrayresult = [yield,yield,yield,yield,yield,yield];         // jab 6 yield ke entry lene ho 
 					//  console.log(result);
-					 console.log(arrayresult[0]);              // if need then use [0] , index number to access element as desire 
+					// console.log(arrayresult[0]);              // if need then use [0] , index number to access element as desire 
 
 
-					 }  
+// 					 }  
 
 
-}
+// }
 
 
 
@@ -1678,38 +1679,29 @@ function *generatorfn(){
          
 
 // lets experiment with for of loop  kay under if condition 
- for(let value of g ){             // fn ke value g mai aur g kee value value mai aa jayeg
+//  for(let value of g ){             // fn ke value g mai aur g kee value value mai aa jayeg
 	//   if ( value > 310){
 	// 	console.log(value);
 	//   }
 	
 	// else{console.log("not completed")}
 	
- }
+//  }
 
 //   Printing PARAMETRIC VALUE 
 
 
 
-let g = generatorfn();
-      g.next(500);               // next ka matlab next yield pe chala jaye , toh 1st yield khali ha toh 1st wale pe chala jayega 
-	  g.next("AMAN");
-	  g.next(300);
-	  g.next(200);
-	  g.next(900);
-	  g.next(800); 
+// let g = generatorfn();
+//       g.next(500);               // next ka matlab next yield pe chala jaye , toh 1st yield khali ha toh 1st wale pe chala jayega 
+// 	  g.next("AMAN");
+// 	  g.next(300);
+// 	  g.next(200);
+// 	  g.next(900);
+// 	  g.next(800); 
 	         
 // console.log(g.next())
 // console.log([ ...g ]);                       // SPREAD OPERATOR 
-
-
-
-
-
-
-
-
-
 
 
 // console.log (generatorfn().next());                 dont print directly ; if u do this willl directly  print 1st yield pnly again and again
@@ -1717,8 +1709,16 @@ let g = generatorfn();
 
 
 
+// ______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________GENERATORS________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________________________________________________________________________________________________________________---
 
+//   a=10;
+// console.log(a);           // this will print with no mistakes but when we use strict this will give error 
 
+        "use strict" ;                     // By this key word we have said browser to become strict . now this will not ignore mistakes 
 
+		a=10;
+		console.log(a);
 
 
