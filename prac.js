@@ -1543,6 +1543,51 @@
 					          
 					// test().then((result)=>{  console.log(  result ); })       // ---------------------  aiN THE CASE OF TRY AND CATCH we dont need to write catch again and again 
 
+       
+
+// ________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________SYMBOL________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________________________________________________________________________________________________________________---
+
+
+// this is use for make any variable unique .. only one ?
+// SYNTAX 
+// var x = Symbol();
+
+// var x = Symbol("AMAN SINGH ");
+
+// var y  = Symbol("AMAN SINGH ");
+
+// console.log(x===y);                              // this give result false ; as X has symbol keyword so this is unique as not equal to y 
+
+// Agar COMpare karna ha toh hawe symbol ko string mai change karna hoga  ish se symbol jo likha aata ha woh bhe haat jayega ---    sirf description ke value aayi gee by     .description  
+        
+//  let age = Symbol();
+
+
+//  let user = {
+//                 name: "YAHOO BABA",
+// 				class : "btech",
+// 				[age] : 35            // symbol ko object kay saath use karnay kay liye hum usko [age]  useke variable ka name falengay
+
+//  }
+                
+//        user[age] = 25;                          // agar bahar se object mai symbol ke value insert karni ha toh object_name[symbol_variable_name] = ___what to enter___;
+//                                             // dono tarh se dalla toh bahr wale ke priority hogi like here line 1571 && 1575(priority)
+
+
+//  console.log(user);
+//  console.log(user[age]);                              // printing outer insertion 
+
+
+// agar hum {for in} & in json  loop use karengay oth symbol ko print nahi karega but only json kay liye .description use karne se print kar dega
+
+
+
+
+
+
+
 
 
 
