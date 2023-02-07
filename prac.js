@@ -1523,8 +1523,6 @@
 
 					
 
-
-
 					// 		await	console.log("3 -- mESSAGE");       // jahan await likhah wahan se aagay ka code nahi chalega ruk jayega 
 								// console.log("4  -- mESSAGE")
 						
@@ -1586,6 +1584,37 @@
 
 
 
+// ______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________ITERATORS________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________________________________________________________________________________________________________________---
+
+
+// object or pattern that  traverse list or collection. define sequences and implement the iterator protocol that returns an object by using next() method that contains the value and is done. 
+// Value contains the next value of iterator sequence and return boolean if last value of sequence has then it’s true else false. 
+
+// We can check if any entity is by default iterable or not We can check its prototype and can see if it is having a method Symbol(Symbol.iterator) or not. 
+
+// In Array.prototype you will find Symbol(Symbol.iterator): ƒ values() method. The array is by default iterable. Also, String, Map & Set are built-in iterables because their prototype objects all have a Symbol.iterator() method.
+
+
+         let x = ["Apple" , "Oranges"  , "grapes "];
+         var number = [44,44,65,2,90,4,53,32,45]
+
+//  SYNTAX
+//   let ish_mai_value_aayega = jiski_variable_ke_value_chaiye[Symbol.iterator]();
+// FOR PRINTING      
+//          Jish_mai_value_aayega.next();
+
+            
+        let y = x[Symbol.iterator]();                 // for printing string wala 
+
+        // let y = number[Symbol.iterator]();                // x ke sari value y mai chali aayegi for hum uskp iterate karr lengay 
+      
+  y.next();                 // Suppose hame pehle value print nahi karni ha toh buss console na kare sirf    Jish_mai_value_aayega.next(); likhe basss ---fir yeh value print nahi hogi 
+ console.log(  y.next()   );             // this simply print 
+ console.log(  y.next().value);                        //  .value lagane se hamko uske under ka sirf value print hoga  
+ console.log(  y.next().done   );                    // showing the value is true or false 
+ // jab takk done ke value false ha tabhi taak chala sakte hain
 
 
 
@@ -1596,3 +1625,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
