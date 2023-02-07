@@ -1470,8 +1470,6 @@
 
 
 
-
-
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // _____________________________________________________Async & Await____________________________________________________________________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -1483,7 +1481,7 @@
 //    to get rid of calling resolve & reject again and again ; so to avoid those complication we use ASync functon 
 //    THIS is similarly like normal function and work like promise just like write  async before function 
 
-SYNTAX
+// SYNTAX
 
 //   async function test(){
 
@@ -1498,7 +1496,7 @@ SYNTAX
 
 // 	 }
 	
-// 	 console.log(test())             // return String value this normally works in Asynchronous fn
+	//  console.log(test())             // return String value this normally works in Asynchronous fn
 	
         // test().then((result)=>{  console.log(  result );         })                // SAMe like Promise lekin resolve reject kee koi jaroorat nahi 
 
@@ -1507,26 +1505,43 @@ SYNTAX
 //Await ---        This Await method also Works under async function
                      // use to control pace of printing of async statement 
 				
-					//  async function test(){
-                               
-					// 			console.log("2 -- mESSAGE");
-					// 	await	console.log("3 -- mESSAGE");
-					// 			console.log("4 -- mESSAGE")
+	// 				 async function test(){
+
+    //                    try {
+	// 					// 	console.log("1 -- mESSAGE");
+	// 				const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    //                  const  jsondata = await response.json();
+					 
+	// 				 return jsondata                  //AS WE KNOW this json data is returned as promise by test function ,, by as we knew async also return promise so we return response.json
+						
+	// // UPper three lines like const response/jsondata  ? return json all in only one lines
+	// 				// return (await fetch("https://jsonplaceholder.typicode.com/posts")).json();
+
+	// 				   } catch (error) {
+	// 					console.log(error)
+	// 				   }
+
+					
+
+
+
+					// 		await	console.log("3 -- mESSAGE");       // jahan await likhah wahan se aagay ka code nahi chalega ruk jayega 
+								// console.log("4  -- mESSAGE")
 						
 					
-					// 	 }
-
-					// 	 console.log("1 -- mESSAGE");
-					// 	test();
-					// 	 console.log("5 -- mESSAGE")
+				//		 }
+						 
+						//  console.log("2 -- mESSAGE");
+						//  test();
+						//  console.log("5 -- mESSAGE")
 
 
 						//  console.log(test())             // return String value this normally works in Asynchronous fn
 						
-							//   test().then((result)=>{  console.log(  result );         })                // SAMe like Promise lekin resolve reject kee koi jaroorat nahi 
 					
-					
-
+						// test().then((result)=>{  console.log(  result ); }).catch((error)=> console.log(error))               // SAMe like Promise lekin resolve reject kee koi jaroorat nahi 
+					          
+					// test().then((result)=>{  console.log(  result ); })       // ---------------------  aiN THE CASE OF TRY AND CATCH we dont need to write catch again and again 
 
 
 
