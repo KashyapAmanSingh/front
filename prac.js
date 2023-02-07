@@ -1597,8 +1597,9 @@
 // In Array.prototype you will find Symbol(Symbol.iterator): ƒ values() method. The array is by default iterable. Also, String, Map & Set are built-in iterables because their prototype objects all have a Symbol.iterator() method.
 
 
-         let x = ["Apple" , "Oranges"  , "grapes "];
-         var number = [44,44,65,2,90,4,53,32,45]
+        //  let x = ["Apple" , "Oranges"  , "grapes "];
+        //  var number = [44,44,65,2,90,4,53,32,45]
+		//  let str = "Yahoo Baba";                      //    this string will be printed one by one 
 
 //  SYNTAX
 //   let ish_mai_value_aayega = jiski_variable_ke_value_chaiye[Symbol.iterator]();
@@ -1606,15 +1607,100 @@
 //          Jish_mai_value_aayega.next();
 
             
-        let y = x[Symbol.iterator]();                 // for printing string wala 
+        // let y = x[Symbol.iterator]();                 // for printing string wala 
 
         // let y = number[Symbol.iterator]();                // x ke sari value y mai chali aayegi for hum uskp iterate karr lengay 
       
-  y.next();                 // Suppose hame pehle value print nahi karni ha toh buss console na kare sirf    Jish_mai_value_aayega.next(); likhe basss ---fir yeh value print nahi hogi 
- console.log(  y.next()   );             // this simply print 
- console.log(  y.next().value);                        //  .value lagane se hamko uske under ka sirf value print hoga  
- console.log(  y.next().done   );                    // showing the value is true or false 
- // jab takk done ke value false ha tabhi taak chala sakte hain
+                    // let y = str[Symbol.iterator]();
+
+
+
+//   y.next();                 // Suppose hame pehle value print nahi karni ha toh buss console na kare sirf    Jish_mai_value_aayega.next(); likhe basss ---fir yeh value print nahi hogi 
+//  console.log(  y.next()   );             // this simply print 
+//  console.log(  y.next().value);                        //  .value lagane se hamko uske under ka sirf value print hoga  
+//  console.log(  y.next().done   );                    // showing the value is true or false 
+//  // jab takk done ke value false ha tabhi taak chala sakte hain
+
+
+
+
+
+// ______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________GENERATORS________________________________________________________________________________________________________________________________________________________
+// ___________________________________________________________________________________________________________________________________________________________________________---
+
+
+//  function *fn_name(){
+//                     yield "first";                  // yield means pause --if we have to print the yoeld we will use .next()
+//                      yield "second";
+// 					 yield "third";
+
+
+
+//  }
+//  console.log (fn_name().next());
+
+			
+		
+function *generatorfn(){
+                //  console.log("first message");
+				//  yield "first yield";
+				//  console.log("second message");
+				//  yield "second  22 yield";
+				//  console.log("Third message");
+				
+				//  console.log("Fourth message");
+//OR 
+
+                     let nextnum = 300;
+					 while(true ){
+						yield(nextnum++);
+
+// PARAMETRIC VALUE   
+                    //  let result = (yield)*10;
+					let arrayresult = [yield,yield,yield,yield,yield,yield];         // jab 6 yield ke entry lene ho 
+					//  console.log(result);
+					 console.log(arrayresult[0]);              // if need then use [0] , index number to access element as desire 
+
+
+					 }  
+
+
+}
+
+
+
+//PRINTING METHOD START 
+
+// let g = generatorfn();
+// console.log(g.next())
+// console.log(g.next())
+         
+
+// lets experiment with for of loop  kay under if condition 
+ for(let value of g ){             // fn ke value g mai aur g kee value value mai aa jayeg
+	//   if ( value > 310){
+	// 	console.log(value);
+	//   }
+	
+	// else{console.log("not completed")}
+	
+ }
+
+//   Printing PARAMETRIC VALUE 
+
+
+
+let g = generatorfn();
+      g.next(500);               // next ka matlab next yield pe chala jaye , toh 1st yield khali ha toh 1st wale pe chala jayega 
+	  g.next("AMAN");
+	  g.next(300);
+	  g.next(200);
+	  g.next(900);
+	  g.next(800); 
+	         
+// console.log(g.next())
+// console.log([ ...g ]);                       // SPREAD OPERATOR 
 
 
 
@@ -1626,6 +1712,7 @@
 
 
 
+// console.log (generatorfn().next());                 dont print directly ; if u do this willl directly  print 1st yield pnly again and again
 
 
 
@@ -1635,6 +1722,3 @@
 
 
 
-
-
- 
