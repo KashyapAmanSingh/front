@@ -1509,14 +1509,7 @@
 
     //                    try {
 	// 					// 	console.log("1 -- mESSAGE");
-	// 				const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    //                  const  jsondata = await response.json();
-					 
-	// 				 return jsondata                  //AS WE KNOW this json data is returned as promise by test function ,, by as we knew async also return promise so we return response.json
-						
-	// // UPper three lines like const response/jsondata  ? return json all in only one lines
-	// 				// return (await fetch("https://jsonplaceholder.typicode.com/posts")).json();
-
+	// 				const re
 	// 				   } catch (error) {
 	// 					console.log(error)
 	// 				   }
@@ -1713,12 +1706,15 @@
 // ___________________________________________________________________GENERATORS________________________________________________________________________________________________________________________________________________________
 // ___________________________________________________________________________________________________________________________________________________________________________---
 
+// even not allow duplict for eg.- taking value from parameter to do console 
+
+
 //   a=10;
 // console.log(a);           // this will print with no mistakes but when we use strict this will give error 
 
-        "use strict" ;                     // By this key word we have said browser to become strict . now this will not ignore mistakes 
-
-		a=10;
-		console.log(a);
+        // "use strict" ;                     // By this key word we have said browser to become strict . now this will not ignore mistakes 
+                                                
+		// a=10;
+		// console.log(a);
 
 
